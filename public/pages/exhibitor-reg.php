@@ -134,64 +134,79 @@
 
             <div class="row px-4 justify-content-center">
               <div class="col-md-4 category-box">
-                <div class="platinum">
-                  <p class="title">
-                    Platinum
-                  </p>
-                  <p class="desc">
-                    6 x 15
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#platinumStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="platinum w-100 h-100">
+
+
+                    <p class="title">
+                      Platinum
+                    </p>
+                    <p class="desc">
+                      6 x 15
+                    </p>
+
+                  </div>
+                </button>
               </div>
               <div class="col-md-4 category-box">
-                <div class="diamond">
-                  <p class="title">
-                    Diamond
-                  </p>
-                  <p class="desc">
-                    6 x 12
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#diamondStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="diamond w-100 h-100">
+                    <p class="title">
+                      Diamond
+                    </p>
+                    <p class="desc">
+                      6 x 12
+                    </p>
+                  </div>
+                </button>
               </div>
               <div class="col-md-4 category-box">
-                <div class="gold">
-                  <p class="title">
-                    Gold
-                  </p>
-                  <p class="desc">
-                    6 x 10
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#goldStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="gold w-100 h-100">
+                    <p class="title">
+                      Gold
+                    </p>
+                    <p class="desc">
+                      6 x 10
+                    </p>
+                  </div>
+                </button>
               </div>
               <div class="col-md-4 category-box">
-                <div class="silver">
-                  <p class="title">
-                    Silver
-                  </p>
-                  <p class="desc">
-                    6 x 10
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#silverStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="silver w-100 h-100">
+                    <p class="title">
+                      Silver
+                    </p>
+                    <p class="desc">
+                      6 x 10
+                    </p>
+                  </div>
+                </button>
               </div>
               <div class="col-md-4 category-box">
-                <div class="adjust international">
-                  <p class="title ">
-                    International Exhibitor
-                  </p>
-                  <p class="desc">
-                    3 x 3
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#internationalStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="adjust international w-100 h-100">
+                    <p class="title ">
+                      International Exhibitor
+                    </p>
+                    <p class="desc">
+                      3 x 3
+                    </p>
+                  </div>
+                </button>
               </div>
               <div class="col-md-4 category-box">
-                <div class="adjust vendor">
-                  <p class="title">
-                    Vendor Registered
-                  </p>
-                  <p class="desc">
-                    3 x 3
-                  </p>
-                </div>
+                <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#vendorStallModal" style="border:none;background:none; padding:0px; margin:0px;">
+                  <div class="adjust vendor w-100 h-100">
+                    <p class="title">
+                      Vendor Registered
+                    </p>
+                    <p class="desc">
+                      3 x 3
+                    </p>
+                  </div>
+                </button>
               </div>
 
             </div>
@@ -319,7 +334,7 @@
 
 
 
-  <!-- Modal -->
+  <!-- Modals -->
   <div class="modal fade" id="stallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -331,6 +346,116 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="platinumStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">6*15 sqm Platinum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="a51" name="a51">
+                  <label class="stall-label" for="a51" data-stall-name="A51">A51</label>
+                  <div class="booked">(Booked)</div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="diamondStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">6*12 sqm Diamond</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+
+                <div class="modal-hall-name">
+                  Hall A
+                </div>
+
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="a49" name="a49">
+                  <label class="stall-label" for="a49" data-stall-name="A49">A49</label>
+                  <div class="booked">(Booked)</div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="goldStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="silverStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="internationalStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="vendorStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <?php include_once __DIR__ . '/tags/organizors-sponsors.php'; ?>
 

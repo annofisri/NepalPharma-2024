@@ -1434,4 +1434,49 @@ table tbody.lane-area {
 
 .floor-plan-main-section {
   padding: 80px 0px;
+}
+
+.stall-title-head {
+  color: var(--Active, #93268f);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 40.25px */
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-check label {
+  color: var(--Active, #93268f);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%; /* 31.5px */
+}
+.form-check .booked {
+  color: var(--Text-1, #ed1b24);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%; /* 31.5px */
+}
+
+.modal-hall-name {
+  display: flex;
+  width: 143px;
+  padding: 4px 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--Active, #93268f);
+  color: var(--Text-4, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 31.5px */
 }/*# sourceMappingURL=style.css.map */
