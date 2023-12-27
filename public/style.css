@@ -1268,7 +1268,7 @@ body {
   background: var(--Active, #93268f);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
-  width: 200px;
+  width: 200px !important;
   padding: 9px;
   flex-direction: column;
   justify-content: center;
@@ -1435,6 +1435,13 @@ table tbody.lane-area {
 .floor-plan-main-section {
   padding: 80px 0px;
 }
+.floor-plan-main-section .title {
+  color: var(--Text-1, #ed1b24);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 49px */
+}
 
 .stall-title-head {
   color: var(--Active, #93268f);
@@ -1479,4 +1486,35 @@ table tbody.lane-area {
   font-style: normal;
   font-weight: 700;
   line-height: 175%; /* 31.5px */
+}
+
+.modal-success {
+  text-align: center;
+}
+.modal-success .modal-body {
+  padding: 60px 0px;
+  background: var(--BG-1, #f4e9f4);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.modal-success .modal-body .success-title {
+  color: var(--Active, #93268f);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 77px */
+}
+.modal-success .modal-body .success-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Text-3, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 31.5px */
+}
+.modal-success .modal-body .success-desc p {
+  margin: 0px;
+  padding: 0px;
 }/*# sourceMappingURL=style.css.map */

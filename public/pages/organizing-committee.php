@@ -40,7 +40,7 @@
       <div class="row">
         <div class="organizing-committee">
           <div>
-            <div class="col committee-mem-title">
+            <div class="col committee-mem-title ps-2">
               Committee Members
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="378" height="20" viewBox="0 0 378 20" fill="none">

@@ -215,7 +215,7 @@
 
             <div class="box">
               <div class="head">
-                <div class="title">
+                <div class="title ps-2">
                   Exhibition Stall Charges
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="486" height="20" viewBox="0 0 486 20" fill="none">
@@ -324,7 +324,9 @@
           <div class="col-md-12 buttons">
 
             <button class="prev-btn">Previous</button>
-            <button class="next-btn">Submit</button>
+            <button type="button" class=" w-100 h-100 next-btn" data-bs-toggle="modal" data-bs-target="#successModal" style="border:none;padding:0px; margin:0px;">
+              Submit
+            </button>
           </div>
         </div>
       </div>
@@ -455,6 +457,35 @@
       </div>
     </div>
   </div>
+  <div class="modal fade modal-success" id="successModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content" style="overflow: hidden;">
+
+        <div class=" modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="success-title">
+                  Thank you !!!
+                </div>
+                <div class="success-desc">
+                  <img src="images/khalti.png" alt="khalti logo" />
+                  <p>
+                    Please Download Khalti App
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
 
 
   <?php include_once __DIR__ . '/tags/organizors-sponsors.php'; ?>

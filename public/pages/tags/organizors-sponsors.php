@@ -2,9 +2,9 @@
     <div class="container text-center sponsor-body">
         <div class="organized-by">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="title">Organized By</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="230" height="20" viewBox="0 0 230 20" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="205" height="20" viewBox="0 0 230 20" fill="none">
                         <path d="M0 0H230L64.889 14.0476L4.19134 20L0 0Z" fill="url(#paint0_linear_489_5433)" />
                         <defs>
                             <linearGradient id="paint0_linear_489_5433" x1="230" y1="10" x2="-5.66965e-07" y2="9.99999" gradientUnits="userSpaceOnUse">
@@ -23,9 +23,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="title">Collaboration with</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="295" height="20" viewBox="0 0 295 20" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="280" height="20" viewBox="0 0 295 20" fill="none">
                         <path d="M0 0H295L83.2272 14.0476L5.37585 20L0 0Z" fill="url(#paint0_linear_832_1376)" />
                         <defs>
                             <linearGradient id="paint0_linear_832_1376" x1="295" y1="10" x2="-7.27193e-07" y2="9.99998" gradientUnits="userSpaceOnUse">
@@ -46,9 +46,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="title">Banking Partner</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="295" height="20" viewBox="0 0 295 20" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="250" height="20" viewBox="0 0 295 20" fill="none">
                         <path d="M0 0H295L83.2272 14.0476L5.37585 20L0 0Z" fill="url(#paint0_linear_865_3420)" />
                         <defs>
                             <linearGradient id="paint0_linear_865_3420" x1="295" y1="10" x2="-7.27193e-07" y2="9.99998" gradientUnits="userSpaceOnUse">
@@ -71,7 +71,7 @@
         </div>
         <div class="assciate-members">
             <div class="title">Associate Members</div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="296" height="20" viewBox="0 0 296 20" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="295" height="20" viewBox="0 0 296 20" fill="none">
                 <path d="M0.5 0H295.5L83.7272 14.0476L5.87585 20L0.5 0Z" fill="url(#paint0_linear_832_1227)" />
                 <defs>
                     <linearGradient id="paint0_linear_832_1227" x1="295.5" y1="10" x2="0.499999" y2="9.99998" gradientUnits="userSpaceOnUse">
@@ -146,7 +146,7 @@
 <section class="sponsor-section">
     <div class="container text-center sponsor-body">
         <div>
-            <div class="sponsor-title pb-0 mb-0">Our Sponsors</div>
+            <div class="sponsor-title pb-0 mb-0 ps-2">Our Sponsors</div>
             <svg class="w-100" xmlns="http://www.w3.org/2000/svg" width="196" height="20" viewBox="0 0 196 20" fill="none">
                 <path d="M0.5 0H195.5L55.5146 14.0476L4.05353 20L0.5 0Z" fill="url(#paint0_linear_489_5445)" />
                 <defs>
