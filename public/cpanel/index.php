@@ -21,16 +21,8 @@ $requestedPage = $_GET['section'] ?? 'dashboard';
 $availablePages = [
     'dashboard' => './sections/dashboard/dashboard.php',
     'exhibitor' => './sections/exhibitor/exhibitor-list.php',
-    'exhibitor-details' => './sections/exhibitor/exhibitor-details.php',
-    'edit-exhibitor-details' => './sections/exhibitor/edit-exhibitor.php',
-    'add-exhibitor-stall' => './sections/exhibitor/add-stall.php',
-    'admin' => './sections/admin/admin-list.php',
-    'add-admin' => './sections/admin/add-admin.php',
-    'edit-admin' => './sections/admin/edit-admin.php',
-
-
+    'stall' => './sections/stall/stall-list.php',
     'leads' => './sections/leads/leads-list.php',
-
 ];
 
 if (!array_key_exists($requestedPage, $availablePages)) {

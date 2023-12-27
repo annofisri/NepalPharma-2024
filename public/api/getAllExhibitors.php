@@ -19,9 +19,9 @@ $success = '';
 if (empty($errors)) {
     $result = $tableExhibitor->getAll();
     if ($result) {
-        if ($data['status'] == 'approved') {
+        if ($data['status'] == 'active') {
             $result = array_filter($result, function ($exhibitor) {
-                return $exhibitor['status'] == 'approved';
+                return $exhibitor['status'] == 'active';
             });
         }
 

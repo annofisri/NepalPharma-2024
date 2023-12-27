@@ -1,3 +1,16 @@
+<?php
+$tableStall = new TableManager('stall');
+
+$stalls = $tableStall->getAll();
+
+$stallsMap = [];
+
+foreach ($stalls as $stall) {
+
+  $stallsMap[$stall['type']][$stall['hall_no']][] = $stall;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,75 +57,68 @@
             Please fill out the form to book your stall in Nepal Expo 2024
           </div>
           <div class="reg-title">Exhibitor's Details</div>
-          <form class="row g-3" id="exhibitorForm">
+          <form class="row g-3" id="step-1">
             <div class="col-12">
-              <label for="company-name" class="form-label">Name of Company / Organization
+              <label for="companyname" class="form-label">Name of Company / Organization
                 <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="company-name" required />
+              <input type="text" class="form-control" id="companyname" name="companyname" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="chief-executive" class="form-label">Name of Chief Executive</label>
-              <input type="text" class="form-control" id="chief-executive" />
+              <label for="chiefexecutive" class="form-label">Name of Chief Executive</label>
+              <input type="text" class="form-control" id="chiefexecutive" name="chiefexecutive" />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="Designation1" class="form-label">Designation</label>
-              <input type="text" class="form-control" id="Designation1" />
+              <label for="designation1" class="form-label">Designation</label>
+              <input type="text" class="form-control" id="designation1" name="designation1" />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="contact-person" class="form-label">Name of the Contact Person
+              <label for="contactperson" class="form-label">Name of the Contact Person
                 <span class="text-danger">*</span>
               </label>
-              <input type="text" class="form-control" id="contact-person" required />
+              <input type="text" class="form-control" id="contactperson" name="contactperson" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="Designation2" class="form-label">Designation<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="Designation2" required />
+              <label for="designation2" class="form-label">Designation<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="designation2" name="designation2" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="inputAddress" class="form-label">Address<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="inputAddress" />
+              <label for="address" class="form-label">Address<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="address" name="address" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
               <label for="city" class="form-label">City</label>
-              <input type="text" class="form-control" id="city" />
+              <input type="text" class="form-control" id="city" name="city" />
             </div>
 
             <div class="col-md-4 d-flex flex-column align-items-start">
               <label for="pin" class="form-label">Pin/Zip</label>
-              <input type="number" class="form-control" id="pin" />
+              <input type="number" class="form-control" id="pin" name="pin" />
             </div>
             <div class="col-md-4">
               <label for="country" class="form-label">Country<span class="text-danger">*</span></label>
-              <select id="country" class="form-select" required>
-                <option selected>Nepal</option>
-                <option>...</option>
+              <select id="country" name="country" class="form-select" required>
               </select>
             </div>
             <div class="col-md-4">
-              <label for="inputPhone" class="form-label">Phone<span class="text-danger">*</span></label>
-              <input type="tel" class="form-control" id="inputPhone" required />
+              <label for="phone" class="form-label">Phone<span class="text-danger">*</span></label>
+              <input type="tel" class="form-control" id="phone" name="phone" required />
             </div>
 
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
               <label for="email" class="form-label">Email Address<span class="text-danger">*</span></label>
-              <input type="email" class="form-control" id="email" required />
+              <input type="email" class="form-control" id="email" name="email" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
               <label for="website" class="form-label">Website</label>
-              <input type="password" class="form-control" id="website" />
+              <input type="text" class="form-control" id="website" name="website" />
             </div>
             <div class="col-12 reg-submit">
               <button type="submit" class="reg-next-btn">Next</button>
             </div>
           </form>
 
-
-
         </div>
       </div>
-
-
-
 
       <div class="stall-selection-section d-none">
         <div class="row floor-section">
@@ -262,73 +268,58 @@
         </div>
 
 
-        <div class="row estimated-amount ">
-          <div class="col-md-12 title">
-            Estimated Amount
-          </div>
-          <table class="table table-borderless">
-            <thead>
-              <tr>
-                <th scope="col">Stall No.</th>
-                <th scope="col">Area (sq. meter)</th>
-                <th scope="col">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>A51</th>
-                <td>6 x 15</td>
-                <td>16,00,000 INR</td>
-              </tr>
-              <tr>
-                <th>B50</th>
-                <td>6 x 12</td>
-                <td>11,00,000 INR</td>
-              </tr>
-              <tr>
-                <th>Total</th>
-                <td></td>
-                <td>27,00,000 INR</td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <div class="col-md-12 product-title">
-            Enter Product Name
-          </div>
-
-          <div class="product-desc">
-            The products of business line of the company which will be put on display at the exhibition through samples or display panel
-          </div>
-
-          <div class="col-md-6 product-input d-flex">
-            <div class="serial-number">1</div>
-            <input type="text" class="form-control" id="product-name1" placeholder="Enter Product Name Here*" required name="product-name1" />
-          </div>
-          <div class="col-md-6 product-input d-flex">
-            <div class="serial-number">2</div>
-            <input type="text" class="form-control" id="product-name2" placeholder="Enter Product Name Here" name="product-name2" />
-          </div>
-          <div class="col-md-6 product-input d-flex">
-            <div class="serial-number">3 </div>
-            <input type="text" class="form-control" id="product-name3" placeholder="Enter Product Name Here" name="product-name3" />
-          </div>
-          <div class="col-md-6 product-input d-flex">
-            <div class="serial-number">4</div>
-            <input type="text" class="form-control" id="product-name4" placeholder="Enter Product Name Here" name="product-name4" />
+        <form id="step-2">
+          <div class="row estimated-amount ">
+            <div class="col-md-12 title">
+              Estimated Amount
+            </div>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Stall No.</th>
+                  <th scope="col">Area (sq. meter)</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody id="estimated-list">
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Total</th>
+                  <td></td>
+                  <td id="grand-total"></td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="col-md-12 product-title">
+              Enter Product Name
+            </div>
+            <div class="product-desc">
+              The products of business line of the company which will be put on display at the exhibition through samples or display panel
+            </div>
+            <div class="col-md-6 product-input d-flex">
+              <div class="serial-number">1</div>
+              <input type="text" class="form-control" id="productname1" placeholder="Enter Product Name Here*" required autocomplete="off" name="productname1" />
+            </div>
+            <div class="col-md-6 product-input d-flex">
+              <div class="serial-number">2</div>
+              <input type="text" class="form-control" id="productname2" placeholder="Enter Product Name Here" autocomplete="off" name="productname2" />
+            </div>
+            <div class="col-md-6 product-input d-flex">
+              <div class="serial-number">3 </div>
+              <input type="text" class="form-control" id="productname3" placeholder="Enter Product Name Here" autocomplete="off" name="productname3" />
+            </div>
+            <div class="col-md-6 product-input d-flex">
+              <div class="serial-number">4</div>
+              <input type="text" class="form-control" id="productname4" placeholder="Enter Product Name Here" autocomplete="off" name="productname4" />
+            </div>
+            <div class="col-md-12 buttons">
+              <button class="prev-btn">Previous</button>
+              <button type="submit" class="next-btn">Submit</button>
+            </div>
           </div>
 
-
-
-          <div class="col-md-12 buttons">
-
-            <button class="prev-btn">Previous</button>
-            <button type="button" class=" w-100 h-100 next-btn" data-bs-toggle="modal" data-bs-target="#successModal" style="border:none;padding:0px; margin:0px;">
-              Submit
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <div id="organizers"></div>
@@ -337,11 +328,23 @@
 
 
   <!-- Modals -->
+  <div class="modal fade" id="dialogModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="alert alert-danger">
+            Please select atleast one stall from stall category.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <div class="modal fade" id="stallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
 
-        <div class="modal-body">
+        <div class="modal-body" style="padding-left: 150px;">
           <?php include __DIR__ . '/../api/layout.html'; ?>
         </div>
 
@@ -360,14 +363,20 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="a51" name="a51">
-                  <label class="stall-label" for="a51" data-stall-name="A51">A51</label>
-                  <div class="booked">(Booked)</div>
+                <div class="modal-hall-name">
+                  Hall A
                 </div>
-
-
+                <?php
+                $div = '';
+                foreach ($stallsMap['platinum']['Hall A'] as $stall) {
+                  $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+                }
+                echo $div;
+                ?>
               </div>
 
             </div>
@@ -391,19 +400,36 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-
                 <div class="modal-hall-name">
                   Hall A
                 </div>
-
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="a49" name="a49">
-                  <label class="stall-label" for="a49" data-stall-name="A49">A49</label>
-                  <div class="booked">(Booked)</div>
+                <?php
+                $div = '';
+                foreach ($stallsMap['diamond']['Hall A'] as $stall) {
+                  $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+                }
+                echo $div;
+                ?>
+              </div>
+              <div class="col-md-6">
+                <div class="modal-hall-name">
+                  Hall B
                 </div>
-
-
+                <?php
+                $div = '';
+                foreach ($stallsMap['diamond']['Hall B'] as $stall) {
+                  $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+                }
+                echo $div;
+                ?>
               </div>
 
             </div>
@@ -414,11 +440,32 @@
     </div>
   </div>
   <div class="modal fade" id="goldStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">
-
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">6*10 sqm Gold</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="modal-hall-name">
+                Hall B
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['gold']['Hall B'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
 
+          </div>
         </div>
 
       </div>
@@ -427,9 +474,61 @@
   <div class="modal fade" id="silverStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">6*10 sqm Silver</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
-
+          <div class="row">
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall A
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['silver']['Hall A'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall B
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['silver']['Hall B'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall C
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['silver']['Hall C'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -438,9 +537,61 @@
   <div class="modal fade" id="internationalStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">3*3 sqm International Exhibitor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
-
+          <div class="row">
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall A
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['international_exhibitor']['Hall A'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall B
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['international_exhibitor']['Hall B'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall C
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['international_exhibitor']['Hall C'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -449,9 +600,74 @@
   <div class="modal fade" id="vendorStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-
+        <div class="modal-header">
+          <h5 class="modal-title stall-title-head">3*3 sqm Vendor Registered</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall A
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['vendor_registered']['Hall A'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall B
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['vendor_registered']['Hall B'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-4">
+              <div class="modal-hall-name">
+                Hall C
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['vendor_registered']['Hall C'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="khaltiModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Khalti</h5>
         </div>
 
       </div>
@@ -495,69 +711,12 @@
   <?php include_once __DIR__ . '/tags/footer.php'; ?>
 
   <?php include_once './includes/scripts.php'; ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> -->
 
   <script>
     $(document).ready(function() {
 
-      // $('#exhibitorForm').validate({
-      //   rules: {
-      //     'company-name': {
-      //       required: true,
-      //     },
-      //     'contact-person': {
-      //       required: true,
-      //     },
-      //     'Designation2': {
-      //       required: true,
-      //     },
-      //     'inputAddress': {
-      //       required: true,
-      //     },
-      //     'country': {
-      //       required: true,
-      //     },
-      //     'inputPhone': {
-      //       required: true,
-      //     },
-      //     'email': {
-      //       required: true,
-      //     },
-      //   },
-      //   messages: {
-      //     'company-name': {
-      //       required: 'Please enter company name',
-      //     },
-      //     'contact-person': {
-      //       required: 'Please enter contact person name',
-      //     },
-      //     'Designation1': {
-      //       required: 'Please enter designation',
-      //     },
-      //     'Designation2': {
-      //       required: 'Please enter designation',
-      //     },
-      //     'inputAddress': {
-      //       required: 'Please enter address',
-      //     },
-      //     'city': {
-      //       required: 'Please enter city',
-      //     },
-      //     'pin': {
-      //       required: 'Please enter pin',
-      //     },
-      //     'country': {
-      //       required: 'Please enter country',
-      //     },
-      //     'inputPhone': {
-      //       required: 'Please enter phone number',
-      //     },
-      //     'email': {
-      //       required: 'Please enter email',
-      //     },
-      //   },
-
-      // })
+      var stallCategory = <?php echo json_encode(STALL_TYPES); ?>;
       var bookedStalls = [];
 
       function getBookedStalls() {
@@ -567,11 +726,8 @@
           success: function(response) {
             if (response.success) {
               bookedStalls = response.data;
-              console.log(bookedStalls);
               $('.stall').removeClass('booked');
               bookedStalls.forEach(function(stall) {
-                // console.log(stall);
-                // console.log($('[data-stall-name="' + stall + '"]'));
                 $('[data-stall-name="' + stall + '"]').closest('.stall').addClass('booked');
               });
 
@@ -580,20 +736,108 @@
         });
       }
 
+      function populateCountry(){
+        const $selectCountry = $('#country');
+        $selectCountry.append(`<option value="" selected>Choose a Country</option>`);
+        $.getJSON('/api/countries.json', function(response){
+          response.forEach(function(country) {
+            $selectCountry.append(`<option value="${country.name}">${country.name}</option>`);
+          });
+        });
+      }
+
+      populateCountry();
+
+      $('input[type="checkbox"]').change(function() {
+        renderEstimatedAmount();
+      });
+
+      renderEstimatedAmount();
+      var selectedStalls = [];
+
+      function renderEstimatedAmount() {
+        selectedStalls = [];
+        let content = '';
+        let grandTotal = 0;
+
+        $('input[type="checkbox"]:checked').each((index, elem) => {
+          selectedStalls.push($(elem).val());
+          content += `<tr><td>${$(elem).val()}</td><td>${stallCategory[$(elem).data('stall-type')].size}</td><td>${parseFloat(stallCategory[$(elem).data('stall-type')].price).toFixed(2)} INR</td></tr>`;
+          const amount = stallCategory[$(elem).data('stall-type')].price;
+          grandTotal += parseFloat(amount);
+        });
+
+        $('#estimated-list').html(content);
+        $('#grand-total').text(`${grandTotal.toFixed(2)}` + ' INR');
+
+      }
+
       getBookedStalls();
 
       $('.reg-next-btn').click(function(e) {
-
-
         e.preventDefault();
-        if ($('#exhibitorForm').validate()) {
-          console.log('valid');
+
+        const $form1 = $('#step-1');
+
+        if ($form1[0].checkValidity()) {
           $('.stall-selection-section').removeClass('d-none');
           $('.reg-box').addClass('d-none');
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Optional: Use smooth scrolling animation
+          });
         } else {
-          // prevent each input block
-          // alert('Please fill all the required fields');
+          $form1[0].reportValidity();
         }
+
+      });
+
+      $('.next-btn').click(function(e) {
+        e.preventDefault();
+
+        if (selectedStalls.length == 0) {
+          $('#dialogModal').modal('show');
+          return;
+        }
+
+        const $form2 = $('#step-2');
+
+        if ($form2[0].checkValidity()) {
+
+          var formData1 = $('#step-1').serializeArray();
+          var formData2 = $('#step-2').serializeArray();
+
+          var combinedData = {};
+          $.each(formData1.concat(formData2), function(index, field) {
+            combinedData[field.name] = field.value;
+          });
+
+          combinedData.selectedStalls = selectedStalls;
+          combinedData.btnCreateExhibitor = true;
+
+          $.ajax({
+            type: 'POST',
+            url: '/api/exhibitor.php',
+            data: combinedData,
+            success: function(response) {
+              // TODO: Show Khalti Modal and TimeOut after 10 seconds
+              console.log(response);
+              if(response.success == true){
+                $('.stall-selection-section').addClass('d-none');
+                $('#khaltiModal').modal('show');
+              }else{
+                alert(response.message);
+              }
+            },
+            error: function(error) {
+              console.error('Error:', error);
+            }
+          });
+
+        } else {
+          $form2[0].reportValidity();
+        }
+
       });
 
       $('.prev-btn').click(function() {
