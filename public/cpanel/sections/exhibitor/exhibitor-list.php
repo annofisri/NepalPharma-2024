@@ -25,13 +25,13 @@
         <div class="main-list">
             <div class="head d-flex px-4 py-3 justify-content-between" style="background: #F5FFFA;height: 69px;">
                 <div class="title">Nepal Pharma Expo 2024 - Exhibitors</div>
-                <div class="total">Total:100</div>
+                <div class="total">Total: <span id="exhibitor-count">0</span></div>
                 <div class="">
 
                     <div class="search-block">
 
                         <form class="w-100" role="search" method="get">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search" value="" id="search-input">
+                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search" value="" id="search-input" data-control-filter="#exhibitor-table">
 
                         </form>
                     </div>
@@ -41,7 +41,7 @@
             <!-- New Table Design -->
             <div class="common-list">
                 <div class="table-list">
-                    <table class="table table-hover table-resposive">
+                    <table class="table table-hover table-resposive" id="exhibitor-table">
                         <thead class="border border-buttom">
                             <tr>
                                 <th scope="col" class="">S.No.</th>
@@ -50,7 +50,7 @@
                                 <th scope="col">Contact Person</th>
                                 <th scope="col">Company Name</th>
                                 <th scope="col">Country</th>
-                                <th scope="col">Stalls</th>
+                                <th scope="col">Preferred Stalls</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -177,9 +177,6 @@
                                     <div class="value ms-auto" data-key="website">www.annofi.com</div>
                                 </div>
 
-                            </div>
-                            <div class="col-md-6">
-
                                 <div class="d-flex key-value border-0">
                                     <div class="key"></div>
                                     <div class="value ms-auto"></div>
@@ -211,53 +208,56 @@
                                 </div>
 
                             </div>
+                            <div class="col-md-6">
+                                <div class="prefered-stalls">
+
+                                    <div class="stall-title">
+                                        <h6>Preferred Stalls</h6>
+                                    </div>
+
+                                    <div class="row allStalls gap-1" id="stall-container">
+                                        <!-- <div class="col-md-6 stall-card">
+                                            <div class="title">
+                                                Stall A1
+                                            </div>
+                                            <div class="type">
+                                                Type: 6 x 10
+
+                                            </div>
+
+                                            <div class="size">
+                                                Size: 9
+                                            </div>
+
+                                            <div class="price">
+                                                Price: INR 1,00,000/-
+                                            </div>
+                                            <div class="status">
+                                                Status: Pending
+                                            </div>
+                                            <div class="action row mt-2">
+                                                <div class=" col-md-6 ">
+                                                    <button type="button" class="black-btn w-100">
+                                                        Approve
+                                                    </button>
+                                                </div>
+                                                <div class=" col-md-6">
+                                                    <button type="button" class="black-btn-outlined w-100">
+                                                        Reject
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row prefered-stalls p-3">
 
-                    <div class="stall-title">
-                        <h6>Preferred Stalls</h6>
-                    </div>
-
-                    <div class="allStalls">
-                        <div class="col-md-3 stall-card">
-                            <div class="title">
-                                Stall A1
-                            </div>
-                            <div class="type">
-                                Type: 6 x 10
-
-                            </div>
-
-                            <div class="size">
-                                Size: 9
-                            </div>
-
-                            <div class="price">
-                                Price: INR 1,00,000/-
-                            </div>
-                            <div class="status">
-                                Status: Pending
-                            </div>
-                            <div class="action row mt-2">
-                                <div class=" col-md-6 ">
-                                    <button type="button" class="black-btn w-100">
-                                        Approve
-                                    </button>
-                                </div>
-                                <div class=" col-md-6">
-                                    <button type="button" class="black-btn-outlined w-100">
-                                        Reject
-                                    </button>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -374,6 +374,7 @@
                     // console.log(response);
                     if (response.success) {
                         $('.table-body').html('');
+                        $('#exhibitor-count').text(response.data.length);
                         response.data.forEach((item, index) => {
                             $('.table-body').append(`
                                 <tr scope="row">
@@ -396,10 +397,10 @@
                                         ${item.country}
                                     </td>
                                     <td>
-                                        ${item.stall}
+                                        ${item.stall_ids}
                                     </td>
                                     <td>
-                                        <div class="status reject">Booked</div>
+                                        <div class="status ${item.status}">${item.status}</div>
                                     </td>
                                     <td>
                                         <div class="action">
@@ -427,10 +428,45 @@
         function patchExhibitorDetails(data) {
             exhibitor = data;
             $('.value').text('');
+            getStallDetail(data.stall_ids);
             $('.value').each(function(index, item) {
                 var key = $(item).data('key');
                 $(item).text(data[key]);
             });
+        }
+
+        function getStallDetail(stall_ids) {
+            if (stall_ids?.length > 1) {
+                $.get('/api/getStallDetail.php', {
+                    stall_ids: stall_ids
+                }, function(response) {
+                    const data = response.data;
+                    $('#stall-container').html('');
+                    data.forEach(function(stall) {
+                        var cardHtml = `<div class="col-md-6">
+                            <div class="stall-card">
+                            <div class="title">Stall: ${stall.name} </div>
+                            <div class="type">Type: ${stall.category_name} </div>
+                            <div class="size">Size: ${stall.size} </div>
+                            <div class="price">Price: ${stall.price} </div>
+                            <div class="status">Status: ${stall.status} </div>
+                            <div class="action row mt-2">
+                            <div class="col-md-6">
+                            ${stall.status == 'booked' ? '' : `<button type="button" data-id="${stall.name}" class="black-btn w-100 btnApproveBooking">Approve</button>`}
+                            </div>
+                            <div class="col-md-6">
+                            <button type="button" data-id="${stall.name}" class="black-btn-outlined w-100 btnDeleteBooking">Delete</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>`;
+
+                        $('#stall-container').append(cardHtml);
+                    });
+                });
+            } else {
+                $('#stall-container').append('<h5 class="text-muted">No stall selected.</h5>');
+            }
         }
 
         $(document).ready(function() {
@@ -439,7 +475,6 @@
             $(document).on('click', '.view-details-btn', function() {
 
                 var id = $(this).data('id');
-
 
                 $.ajax({
                     url: '/api/getExhibitorDetail.php',
@@ -452,8 +487,6 @@
                         if (response.success) {
 
                             patchExhibitorDetails(response.data);
-
-
 
                             $('.main-list').addClass('d-none');
                             $('.detail-and-stall').removeClass('d-none');
@@ -482,6 +515,66 @@
                 $('.detail-and-stall').removeClass('d-none');
                 $('.edit-form').addClass('d-none');
             })
+            $(document).on('click', '.btnApproveBooking', function(e) {
+                e.preventDefault();
+                const $btn = $(this);
+                $btn.prop({
+                    disabled: true
+                });
+                const stall_id = $btn.data('id');
+                $.ajax({
+                    url: '/api/updateStallStatus.php',
+                    type: 'POST',
+                    data: {
+                        stall_id: stall_id,
+                        exhibitor_id: exhibitor.id,
+                        btnApproveBooking: true
+                    },
+                    success: function(response) {
+                        if (response.success == true) {
+                            $btn.closest('.stall-card').find('.status').text(`Status: ${response.data.status}`);
+                            $btn.remove();
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    },
+                    complete: function() {
+                        $btn.prop({
+                            disabled: false
+                        });
+                    }
+                });
+            });
+            $(document).on('click', '.btnDeleteBooking', function(e) {
+                e.preventDefault();
+                const $btn = $(this);
+                $btn.prop({
+                    disabled: true
+                });
+                const stall_id = $btn.data('id');
+                $.ajax({
+                    url: '/api/updateStallStatus.php',
+                    type: 'POST',
+                    data: {
+                        stall_id: stall_id,
+                        exhibitor_id: exhibitor.id,
+                        btnDeleteBooking: true
+                    },
+                    success: function(response) {
+                        if (response.success == true) {
+                            $btn.closest('.stall-card').remove();
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
             $('.edit-btn').click(function() {
 
                 $('.edit-exhibitor #company-name').val(exhibitor.name);
@@ -508,7 +601,6 @@
             $('#editExhibitorForm').submit(function(e) {
                 e.preventDefault();
                 const formData = $(this).serialize() + '&updateExhibitor';
-                console.log(formData);
                 $.ajax({
                     url: '/api/updateExhibitor.php',
                     type: 'POST',

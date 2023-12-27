@@ -8,9 +8,9 @@ $current_page = str_replace(['add-', 'edit-', '-details', '-stall'], '', $curren
 ?>
 
 <div id="mySidenav" class="sidenav">
-    <div class="logo-image" style="height:125px;">
+    <div class="logo-image">
         <div class="logo h-100 w-100">
-            <img src="./assets/images/logo-head.png" alt="" style="object-fit: cover;" class="blend">
+            <a href="/" target="_blank"><img src="./assets/images/logo-head.png" alt="" style="object-fit: cover;" class="blend"></a>
         </div>
     </div>
 
@@ -29,12 +29,14 @@ $current_page = str_replace(['add-', 'edit-', '-details', '-stall'], '', $curren
             </div>
             <div class="section-head">Pages</div>
 
-
-
-
             <div class="side-dropdown">
                 <div class="dropdown-link">
-                    <a class="<?php if ($current_page == 'exhibitor') echo 'active'; ?>" href="/cpanel/exhibitor">Exhibitor</a>
+                    <a class="<?php if ($current_page == 'exhibitor') echo 'active'; ?>" href="/cpanel/exhibitor">Exhibitors</a>
+                </div>
+            </div>
+            <div class="side-dropdown">
+                <div class="dropdown-link">
+                    <a class="<?php if ($current_page == 'stall') echo 'active'; ?>" href="/cpanel/stall">Stalls</a>
                 </div>
             </div>
             <div class="side-dropdown">
@@ -43,12 +45,7 @@ $current_page = str_replace(['add-', 'edit-', '-details', '-stall'], '', $curren
                 </div>
             </div>
 
-
-
         </div>
-
-
-
 
         <div class="section-head">Settings</div>
         <div class="side-dropdown">

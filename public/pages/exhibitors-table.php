@@ -84,51 +84,7 @@
               </table>
             </div>
           </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <div class="search-bar">
-              <div>EXHIBITORS LIST</div>
-            </div>
-            <div class="table-container">
-              <table class="table table-borderless">
-                <thead class="table-head">
-                  <tr>
-                    <th scope="col-md-8">COMPANY NAME</th>
-                    <th scope="col-md-4">COUNTRY</th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>ONLINE PRINT AND PACK PVT LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                  <tr>
-                    <td>NEPAL PHARMACEUTICALS LAB. PVT. LTD</td>
-                    <td>NEPAL</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -154,7 +110,7 @@
                     <tr>
                         <td>${exhibitor.name}</td>
                         <td>${exhibitor.country}</td>
-                        <td>${exhibitor.stall_no}</td>
+                        <td>${exhibitor.stall_ids}</td>
                     </tr>
                 `;
           $('.table-body').append(html);
@@ -166,7 +122,7 @@
         $.ajax({
           url: '/api/getAllExhibitors.php',
           type: 'POST',
-          data: '&status=approved',
+          data: '&status=active',
 
           success: function(response) {
             if (response.success) {

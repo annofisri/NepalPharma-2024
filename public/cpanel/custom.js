@@ -11,3 +11,13 @@ function openNav() {
 }
 //hide sidebar end
 
+$(document).ready(function () {
+    $('[data-control-filter]').on('input', function () {
+        const targetTableId = $(this).data('control-filter');
+        const filterValue = $(this).val().toLowerCase();
+        $(`${targetTableId} tbody tr`).each(function () {
+            const rowText = $(this).text().toLowerCase();
+            $(this).toggle(rowText.includes(filterValue));
+        });
+    });
+});

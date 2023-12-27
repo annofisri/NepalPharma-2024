@@ -14,11 +14,10 @@ define('ALLOWED_IMAGE_TYPES', [
     'jpg',
 ]);
 
-
 define('STALL_TYPES', [
     'platinum' => [
         'name' => 'Platinum Sponsor',
-        'price' => '16,00,000',
+        'price' => '1600000',
         'color' => '#8DC63F',
         'size' => '6 x 15',
         'quantity' => '(1 no)',
@@ -33,29 +32,29 @@ define('STALL_TYPES', [
     ],
     'gold' => [
         'name' => 'Gold Sponsor',
-        'price' => '10,00,000',
+        'price' => '1000000',
         'color' => '#4ABFD9',
         'size' => '6 x 10',
         'quantity' => '(2 no)',
     ],
     'silver' => [
         'name' => 'Silver Sponsor',
-        'price' => '6,50,000',
+        'price' => '650000',
         'color' => '#F391BC',
         'size' => '6 x 10',
         'quantity' => '(5 no)',
     ],
     'international_exhibitor' => [
-        'name' => 'For International Exhibitor',
-        'price' => '1,00,000',
+        'name' => 'International Exhibitor',
+        'price' => '100000',
         'color' => '#E5D44C',
         'size' => '3 x 3',
         'quantity' => '9sq/meter',
     ],
 
-    'vendor_registred' => [
+    'vendor_registered' => [
         'name' => 'Vendor Registered',
-        'price' => '75,000',
+        'price' => '75000',
         'color' => '#C3C4C6',
         'size' => '3 x 3',
         'quantity' => '9sq/meter',

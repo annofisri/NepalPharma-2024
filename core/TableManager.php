@@ -30,10 +30,36 @@ class TableManager
         $stmt->execute([':id' => $id]);
         return $stmt->fetch();
     }
-
-    public function getAll()
+    public function getStallsByExhibitorId($id)
     {
+        $sql = "SELECT * FROM $this->table WHERE exhibitor_id = :id";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([':id' => $id]);
+        return $stmt->fetchAll();
+    }
+    public function getAllStallAndExhibitor()
+    {
+        $sql = "SELECT s.id, s.name, s.type, s.hall_no, s.exhibitor_id, s.status, IFNULL(e.name, '') as exhibitor_name, e.country, st.name as stall_type FROM stall s LEFT JOIN exhibitor e ON e.id = s.exhibitor_id LEFT JOIN stall_type st ON st.id = s.type ORDER BY s.id";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+    public function getByName($name)
+    {
+        $sql = "SELECT * FROM $this->table WHERE name = :name";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([':name' => $name]);
+        return $stmt->fetch();
+    }
+
+    public function getAll($settings = [])
+    {
+        $orderBy = $settings['orderBy'] ?? null;
+
         $sql = "SELECT * FROM $this->table";
+        if ($orderBy) {
+            $sql .= " ORDER BY $orderBy";
+        }
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll();

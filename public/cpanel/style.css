@@ -302,7 +302,6 @@ body {
   border-bottom: 0.25px solid #bcbcbc;
 }
 .sidenav .logo-image .logo {
-  max-height: 65px;
   overflow: hidden;
 }
 .sidenav .logo-image .logo img {
