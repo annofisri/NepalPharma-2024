@@ -1,7 +1,7 @@
 <section class="hero-section">
   <img src="images/background.png" alt="Hero Image" class="w-100" />
   <div class="position-relative">
-    <div class="join-expo-container position-absolute start-50 translate-middle d-flex align-items-center justify-content-center">
+    <div class=" position-absolute start-50 translate-middle d-flex align-items-center justify-content-center join-expo-container">
       <div class="text-center">
         <h1 class="fw-bold join-expo-container-title">
           Nepal Pharma Expo 2024

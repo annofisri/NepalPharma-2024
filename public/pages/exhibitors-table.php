@@ -84,7 +84,7 @@
               </table>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -126,7 +126,6 @@
 
           success: function(response) {
             if (response.success) {
-              // console.log(response.data);
               exhibitorList = response.data;
               renderTableData();
             } else {
@@ -134,7 +133,7 @@
             }
           },
           error: function(error) {
-            console.log(error);
+            console.error(error);
           }
         });
       }

@@ -69,11 +69,8 @@
                 success: function(response) {
                     if (response.success) {
                         bookedStalls = response.data;
-                        console.log(bookedStalls);
                         $('.stall').removeClass('booked');
                         bookedStalls.forEach(function(stall) {
-                            // console.log(stall);
-                            // console.log($('[data-stall-name="' + stall + '"]'));
                             $('[data-stall-name="' + stall + '"]').closest('.stall').addClass('booked');
                         });
 

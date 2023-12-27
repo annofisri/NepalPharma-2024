@@ -30,7 +30,7 @@
                 <div class="search-block">
 
                     <form class="w-100" role="search" method="get">
-                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search" value="" id="search-input">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search" value="" id="search-input" data-control-filter="#listLeads">
 
                     </form>
                 </div>
@@ -40,11 +40,8 @@
         <!-- New Table Design -->
         <div class="common-list">
 
-
-
-
             <div class="table-list">
-                <table class="table table-hover table-resposive">
+                <table class="table table-hover table-resposive" id="listLeads">
                     <thead class="border border-buttom">
                         <tr>
                             <th scope="col" class="">S.No.</th>
@@ -156,7 +153,7 @@
                 url: '/api/getAllLeads.php',
                 type: 'GET',
                 success: function(response) {
-                    // console.log(response);
+                    // 
                     if (response.success) {
                         $('.table-body').html('');
                         response.data.forEach((item, index) => {
@@ -185,7 +182,7 @@
                     }
                 },
                 error: function(error) {
-                    console.log(error);
+                    console.error(error);
                 }
             });
         }

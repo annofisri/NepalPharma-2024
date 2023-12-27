@@ -33,7 +33,6 @@ if (isset($_POST["btnLogin"])) {
         $_SESSION['username'] = $valid_user['username'];
         $_SESSION['name'] = $valid_user['name'];
         $_SESSION['email'] = $valid_user['email'];
-        consoleLog($_SESSION['id']);
         header('Location:/cpanel/index.php');
         exit();
       case 'inactive':

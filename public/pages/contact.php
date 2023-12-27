@@ -146,7 +146,6 @@
         const form = $(this);
 
         const formData = form.serialize() + "&btnSubmit";
-        // console.log(formData);
 
         $.ajax({
           type: "post",
@@ -161,7 +160,7 @@
             }
           },
           error: function(error) {
-            console.log(error);
+            console.error(error);
           }
         });
       });

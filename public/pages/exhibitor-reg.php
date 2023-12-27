@@ -660,7 +660,7 @@ foreach ($stalls as $stall) {
       </div>
     </div>
   </div>
- 
+
   <div class="modal fade modal-success" id="khaltiModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content" style="overflow: hidden;">
@@ -724,10 +724,10 @@ foreach ($stalls as $stall) {
         });
       }
 
-      function populateCountry(){
+      function populateCountry() {
         const $selectCountry = $('#country');
         $selectCountry.append(`<option value="" selected>Choose a Country</option>`);
-        $.getJSON('/api/countries.json', function(response){
+        $.getJSON('/api/countries.json', function(response) {
           response.forEach(function(country) {
             $selectCountry.append(`<option value="${country.name}">${country.name}</option>`);
           });
@@ -770,8 +770,10 @@ foreach ($stalls as $stall) {
         if ($form1[0].checkValidity()) {
           $('.stall-selection-section').removeClass('d-none');
           $('.reg-box').addClass('d-none');
+          const scrollTop = $('.exhibitor-reg-form').offset().top;
+
           window.scrollTo({
-            top: 0,
+            top: scrollTop - 100,
             behavior: 'smooth' // Optional: Use smooth scrolling animation
           });
         } else {
@@ -809,11 +811,11 @@ foreach ($stalls as $stall) {
             data: combinedData,
             success: function(response) {
               // TODO: Show Khalti Modal and TimeOut after 10 seconds
-              console.log(response);
-              if(response.success == true){
+
+              if (response.success == true) {
                 $('.stall-selection-section').addClass('d-none');
                 $('#khaltiModal').modal('show');
-              }else{
+              } else {
                 alert(response.message);
               }
             },

@@ -1,6 +1,4 @@
 <?php
-
-// consoleLog('hi');
 ?>
 
 

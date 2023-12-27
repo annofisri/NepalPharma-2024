@@ -53,7 +53,7 @@
               </defs>
             </svg>
           </div>
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             <div class="committee-member">
               <div class="member-img">
                 <img src="images/committee-member.png" alt="Committee Member" class="img-fluid" />
@@ -168,7 +168,350 @@
                 </div>
               </div>
             </div>
+          </div> -->
+
+
+
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="/images/committee-members/PrabhatRoongta.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Prabhat Roongta
+                  </div>
+                  <div class="member-post">Chief Co-Ordinator
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PrthiviRajbhandary.jpg" alt="Committee Member" class="img-fluid" />
+
+
+                </div>
+                <div>
+                  <div class=" member-name">Prthivi Rajbhandary
+
+                  </div>
+                  <div class="member-post">Asst Chief Coordinator
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/MaheshPrasadPradhan.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Mahesh Prasad Pradhan
+                  </div>
+                  <div class="member-post">APPON-President
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PrajwalJungPandey.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Prajwal Jung Pandey
+                  </div>
+                  <div class="member-post">Immediate Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/G.NarayanBahadurChhetri.jpg" alt="Committee Member" class="img-fluid" />
+
+                </div>
+                <div>
+                  <div class="member-name">G. Narayan Bahadur Chhetri
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PradeepJungPandey.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Pradeep Jung Pandey
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/UmeshLalShrestha.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Umesh Lal Shrestha
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/MaheshGorkhali.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Mahesh Gorkhali
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/ShankerGhimire.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Shanker Ghimire
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/DeepakPrasadDahal.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Deepak Prasad Dahal
+                  </div>
+                  <div class="member-post">Past President
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/RadhaRamanPrasadShah.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Radha Raman Prasad Shah
+                  </div>
+                  <div class="member-post">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PrthiviRajbhandary(Niju).jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Prthivi Rajbhandary (Niju)
+                  </div>
+                  <div class="member-post">Finance Committee
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PankajKumarTiwari.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Pankaj Kumar Tiwari
+                  </div>
+                  <div class="member-post">Inauguration & Closing
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/RajuPoudel.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Raju Poudel
+                  </div>
+                  <div class="member-post">Inauguration & Closing
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PradeepKShrestha.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Pradeep K. Shrestha
+                  </div>
+                  <div class="member-post">Souvenir Publications SC
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/SumitChandraShrestha.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class=" member-name">Sumit Chandra Shrestha
+                  </div>
+                  <div class="member-post">Scientific sub committee
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/PrawanDahal.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Prawan Dahal
+                  </div>
+                  <div class="member-post">Scientific sub committee
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/GirirajPathak(Ganesh).jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Giriraj Pathak (Ganesh)
+                  </div>
+                  <div class="member-post">Transportation Sub Committee
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/SantoshBaral.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class=" member-name">Santosh Baral
+                  </div>
+                  <div class="member-post">Publicity & Media SC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/AshishThakur.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Ashish Thakur
+                  </div>
+                  <div class="member-post">Food and Beverage SC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/IshworKumarBhandari.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Ishwor Kumar Bhandari
+                  </div>
+                  <div class="member-post">Venue Management SC
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 row">
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/DeepakTibrewal.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Deepak Tibrewal
+                  </div>
+                  <div class="member-post">Entertainment SC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/DeepeshPradhan.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Deepesh Pradhan
+                  </div>
+                  <div class="member-post">Public Relation SC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="committee-member">
+                <div class="member-img">
+                  <img src="images/committee-members/RishiBhandari.jpg" alt="Committee Member" class="img-fluid" />
+                </div>
+                <div>
+                  <div class="member-name">Rishi Bhandari
+                  </div>
+                  <div class="member-post">Public Relation SC
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
