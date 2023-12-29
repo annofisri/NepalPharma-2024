@@ -23,7 +23,7 @@
 
 
         <div class="head d-flex mx-4 my-3 justify-content-between">
-            <div class="title">Nepal Pharma Expo 2024 - Exhibitors</div>
+            <div class="title">Nepal Pharma Expo 2024 - Leads</div>
             <!-- <div class="total">Total:100</div> -->
             <div class="">
 

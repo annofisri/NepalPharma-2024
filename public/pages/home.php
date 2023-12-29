@@ -40,7 +40,7 @@
   </section>
 
 
-  <section class="message-form">
+  <section class="message-form d-none">
     <div class="container">
       <div class="row">
         <div class="col-md-5">

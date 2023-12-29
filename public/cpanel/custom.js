@@ -11,6 +11,8 @@ function openNav() {
 }
 //hide sidebar end
 
+
+//client side searching
 $(document).ready(function () {
     $('[data-control-filter]').on('input', function () {
         const targetTableId = $(this).data('control-filter');
@@ -21,3 +23,4 @@ $(document).ready(function () {
         });
     });
 });
+//client side searching end
