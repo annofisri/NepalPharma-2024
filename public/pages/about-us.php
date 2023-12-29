@@ -41,7 +41,7 @@
         <div class="col-md">
           <div class="what-is-texts">
             <div>
-              <div class="what-is-title">What is Nepal Pharma Expo?</div>
+              <div class="what-is-title ps-2">What is Nepal Pharma Expo?</div>
               <svg xmlns="http://www.w3.org/2000/svg" width="508" height="20" viewBox="0 0 508 20" fill="none">
                 <path d="M0 0H508L143.32 14.0476L9.2574 20L0 0Z" fill="url(#paint0_linear_865_3425)" />
                 <defs>

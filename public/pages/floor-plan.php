@@ -26,7 +26,25 @@
 
     <section class="floor-plan-main-section">
         <div class="container">
-            <?php include __DIR__ . '/../api/layout.html'; ?>
+            <div class="row">
+
+                <div class="col-md-12 mb-5">
+                    <div class="title ps-2">
+                        Floor Plan For Exhibitors & Visitors
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
+                        <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_1104_2603)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_1104_2603" x1="582" y1="10" x2="-1.43466e-06" y2="9.99992" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5C2E91" />
+                                <stop offset="1" stop-color="#93268F" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <?php include __DIR__ . '/../api/layout.html'; ?>
+            </div>
+
         </div>
         <div id="organizers"></div>
     </section>
@@ -51,11 +69,8 @@
                 success: function(response) {
                     if (response.success) {
                         bookedStalls = response.data;
-                        console.log(bookedStalls);
                         $('.stall').removeClass('booked');
                         bookedStalls.forEach(function(stall) {
-                            // console.log(stall);
-                            // console.log($('[data-stall-name="' + stall + '"]'));
                             $('[data-stall-name="' + stall + '"]').closest('.stall').addClass('booked');
                         });
 

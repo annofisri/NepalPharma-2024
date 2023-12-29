@@ -945,6 +945,13 @@ body {
   margin: 0 1rem;
   padding: 12px;
 }
+.exhibitor-details .prefered-stalls .stall-card .title {
+  color: var(--Text-3, #121212);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%; /* 24.5px */
+}
 
 .form-box {
   padding: 20px;

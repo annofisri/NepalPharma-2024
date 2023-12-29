@@ -1,6 +1,4 @@
 <?php
-
-// consoleLog('hi');
 ?>
 
 
@@ -49,7 +47,7 @@
           <img src="images/message-form.png" class="w-100 h-100">
         </div>
         <div class="col-md-7">
-          <div class="message-form-title">Message From</div>
+          <div class="message-form-title ps-2">Message From</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_2154)" />
             <defs>
@@ -76,7 +74,7 @@
     <div class="container">
       <div class="row">
         <div class="exhibitor col-md-6">
-          <div class="exhibitor-title">Exhibitors Profile</div>
+          <div class="exhibitor-title ps-2">Exhibitors Profile</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_1795)" />
             <defs>
@@ -95,7 +93,7 @@
 
         </div>
         <div class="visitor col-md-6">
-          <div class="visitor-title">Visitors Profile</div>
+          <div class="visitor-title ps-2">Visitors Profile</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_1795)" />
             <defs>
@@ -120,7 +118,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="why-visit-texts">
-            <div class="why-visit-title">Why Should You Visit?</div>
+            <div class="why-visit-title ps-2">Why Should You Visit?</div>
             <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
               <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_832_1369)" />
               <defs>
@@ -223,7 +221,7 @@
 
         </div>
         <div class="col-md-6 floor-plan-details">
-          <div class="floor-plan-title">Floor Plan For Exhibitors & Visitors</div>
+          <div class="floor-plan-title ps-2">Floor Plan For Exhibitors & Visitors</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
             <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_832_2649)" />
             <defs>

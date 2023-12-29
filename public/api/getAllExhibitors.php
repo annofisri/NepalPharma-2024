@@ -18,26 +18,20 @@ $success = '';
 
 if (empty($errors)) {
     $result = $tableExhibitor->getAll();
-    if ($result) {
-        if ($data['status'] == 'active') {
-            $result = array_filter($result, function ($exhibitor) {
-                return $exhibitor['status'] == 'active';
-            });
-        }
-
-        usort($result, function ($a, $b) {
-            return $a['name'] <=> $b['name'];
+    if ($data['status'] == 'active') {
+        $result = array_filter($result, function ($exhibitor) {
+            return $exhibitor['status'] == 'active';
         });
-
-        $success = 'Exhibitors fetched successfully';
-        $output['success'] = true;
-        $output['data'] = $result;
-        $output['message'] = $success;
-    } else {
-        $errors['db_error'] = 'Failed to fetch exhibitors';
-        $output['error'] = $errors;
-        $output['message'] = 'Failed to fetch exhibitors';
     }
+
+    usort($result, function ($a, $b) {
+        return $a['name'] <=> $b['name'];
+    });
+
+    $success = 'Exhibitors fetched successfully';
+    $output['success'] = true;
+    $output['data'] = $result;
+    $output['message'] = $success;
 }
 
 header('Content-Type: application/json');

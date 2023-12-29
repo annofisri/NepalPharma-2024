@@ -29,10 +29,8 @@
                 <div class="">
 
                     <div class="search-block">
-
                         <form class="w-100" role="search" method="get">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search" value="" id="search-input" data-control-filter="#exhibitor-table">
-
                         </form>
                     </div>
                 </div>
@@ -56,40 +54,7 @@
                             </tr>
                         </thead>
                         <tbody class="table-body">
-                            <tr scope="row">
-                                <td class="">
-                                    1
-                                </td>
-                                <td>
-                                    2021-09-01
-                                </td>
-                                <td>
-                                    1
 
-                                </td>
-                                <td>
-                                    Niraj Shrestha
-                                </td>
-                                <td>
-                                    Annofi
-                                </td>
-                                <td>
-                                    Nepal
-                                </td>
-                                <td>
-                                    A1
-                                </td>
-                                <td>
-                                    <div class="status reject">Booked</div>
-                                </td>
-                                <td>
-                                    <div class="action">
-                                        <button type="button" class="black-btn-outlined view-details-btn" data-id="<?php echo 1; ?>">
-                                            More Details
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -119,6 +84,12 @@
                     <div class="col-md-12">
                         <div class="row ">
                             <div class="col-md-6">
+
+                                <div class="d-flex key-value">
+                                    <div class="key"> Registration ID:</div>
+                                    <div class="value ms-auto" data-key="id">1</div>
+                                </div>
+
                                 <div class="d-flex key-value">
                                     <div class="key"> Company Name:</div>
                                     <div class="value ms-auto" data-key="name">Annofi</div>
@@ -129,19 +100,25 @@
                                 </div>
 
                                 <div class="d-flex key-value">
-                                    <div class="key"> Chief Executive:</div>
+                                    <div class="key"> Chief Executive Name:</div>
                                     <div class="value ms-auto" data-key="chief_name">Niraj Shrestha</div>
                                 </div>
+
+                                <div class="d-flex key-value">
+                                    <div class="key"> Designation:</div>
+                                    <div class="value ms-auto" data-key="designation">CEO</div>
+                                </div>
+
                                 <div class="d-flex key-value">
                                     <div class="key"> Contact Person:</div>
                                     <div class="value ms-auto" data-key="contact_person">Niraj Shrestha</div>
                                 </div>
 
-
                                 <div class="d-flex key-value">
-                                    <div class="key"> City:</div>
-                                    <div class="value ms-auto" data-key="city">Kathmandu</div>
+                                    <div class="key"> Designation:</div>
+                                    <div class="value ms-auto" data-key="contact_person_designation">CEO</div>
                                 </div>
+
 
 
                                 <div class="d-flex key-value">
@@ -149,7 +126,20 @@
                                     <div class="value ms-auto" data-key="address">Kathmandu</div>
                                 </div>
 
+                                <div class="d-flex key-value">
+                                    <div class="key"> City:</div>
+                                    <div class="value ms-auto" data-key="city">Kathmandu</div>
+                                </div>
 
+                                <div class="d-flex key-value">
+                                    <div class="key"> Country:</div>
+                                    <div class="value ms-auto" data-key="country">Nepal</div>
+                                </div>
+
+                                <div class="d-flex key-value">
+                                    <div class="key"> Zip Code:</div>
+                                    <div class="value ms-auto" data-key="pin">44600</div>
+                                </div>
 
                                 <div class="d-flex key-value">
                                     <div class="key"> Phone:</div>
@@ -166,46 +156,16 @@
                                 </div>
 
 
-                                <!-- <div class="d-flex key-value">
-                                    <div class="key"> Fax:</div>
-                                    <div class="value ms-auto" data-key="fax">+977-9841234567</div>
-                                </div> -->
-
-
                                 <div class="d-flex key-value">
                                     <div class="key"> Website:</div>
                                     <div class="value ms-auto" data-key="website">www.annofi.com</div>
                                 </div>
 
-                                <div class="d-flex key-value border-0">
+
+                                <!-- <div class="d-flex key-value border-0">
                                     <div class="key"></div>
                                     <div class="value ms-auto"></div>
-                                </div>
-                                <div class="d-flex key-value">
-                                    <div class="key"> Registration ID:</div>
-                                    <div class="value ms-auto" data-key="id">1</div>
-                                </div>
-
-                                <div class="d-flex key-value">
-                                    <div class="key"> Designation:</div>
-                                    <div class="value ms-auto" data-key="designation">CEO</div>
-                                </div>
-                                <div class="d-flex key-value">
-                                    <div class="key"> Designation:</div>
-                                    <div class="value ms-auto" data-key="contact_person_designation">CEO</div>
-                                </div>
-
-
-                                <div class="d-flex key-value">
-                                    <div class="key"> Zip Code:</div>
-                                    <div class="value ms-auto" data-key="pin">44600</div>
-                                </div>
-
-
-                                <div class="d-flex key-value">
-                                    <div class="key"> Country:</div>
-                                    <div class="value ms-auto" data-key="country">Nepal</div>
-                                </div>
+                                </div> -->
 
                             </div>
                             <div class="col-md-6">
@@ -216,40 +176,7 @@
                                     </div>
 
                                     <div class="row allStalls gap-1" id="stall-container">
-                                        <!-- <div class="col-md-6 stall-card">
-                                            <div class="title">
-                                                Stall A1
-                                            </div>
-                                            <div class="type">
-                                                Type: 6 x 10
 
-                                            </div>
-
-                                            <div class="size">
-                                                Size: 9
-                                            </div>
-
-                                            <div class="price">
-                                                Price: INR 1,00,000/-
-                                            </div>
-                                            <div class="status">
-                                                Status: Pending
-                                            </div>
-                                            <div class="action row mt-2">
-                                                <div class=" col-md-6 ">
-                                                    <button type="button" class="black-btn w-100">
-                                                        Approve
-                                                    </button>
-                                                </div>
-                                                <div class=" col-md-6">
-                                                    <button type="button" class="black-btn-outlined w-100">
-                                                        Reject
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +298,7 @@
                 url: '/api/getAllExhibitors.php',
                 type: 'GET',
                 success: function(response) {
-                    // console.log(response);
+                    // 
                     if (response.success) {
                         $('.table-body').html('');
                         $('#exhibitor-count').text(response.data.length);
@@ -417,7 +344,7 @@
                     }
                 },
                 error: function(error) {
-                    console.log(error);
+                    console.error(error);
                 }
             });
         }
@@ -483,7 +410,7 @@
                         id: id
                     },
                     success: function(response) {
-                        // console.log(response);
+                        // 
                         if (response.success) {
 
                             patchExhibitorDetails(response.data);
@@ -497,7 +424,7 @@
                         }
                     },
                     error: function(error) {
-                        console.log(error);
+                        console.error(error);
                     }
                 })
 
@@ -506,6 +433,7 @@
                 // $('.edit-form').addClass('d-none');
             })
             $('#detailAndStallBackBtn').click(function() {
+                getAllExhibitors();
                 $('.main-list').removeClass('d-none');
                 $('.detail-and-stall').addClass('d-none');
                 $('.edit-form').addClass('d-none');
@@ -539,7 +467,7 @@
                         }
                     },
                     error: function(error) {
-                        console.log(error);
+                        console.error(error);
                     },
                     complete: function() {
                         $btn.prop({
@@ -571,7 +499,7 @@
                         }
                     },
                     error: function(error) {
-                        console.log(error);
+                        console.error(error);
                     }
                 });
             });
@@ -606,19 +534,18 @@
                     type: 'POST',
                     data: formData,
                     success: function(response) {
-                        console.log(response);
+                        // 
                         if (response.success) {
                             getAllExhibitors();
                             $('.main-list').removeClass('d-none');
                             $('.detail-and-stall').addClass('d-none');
                             $('.edit-form').addClass('d-none');
                         } else {
-                            console.log(response.error);
                             alert(response.message + ' ' + response.error);
                         }
                     },
                     error: function(error) {
-                        console.log(error);
+                        console.error(error);
                     }
                 })
             })

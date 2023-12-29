@@ -4,7 +4,6 @@ $current_page = strstr($current_page, '?', true) ?: $current_page;
 $current_page = str_replace(['add-', 'edit-', '-details', '-stall'], '', $current_page);
 
 
-// consoleLog($current_page);
 ?>
 
 <div id="mySidenav" class="sidenav">
