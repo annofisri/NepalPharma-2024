@@ -17,9 +17,8 @@ class Login
             ':email' => $email,
         ]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
         if ($row) {
-            $isPasswordMatched = md5($password) === $row['password'];
+            $isPasswordMatched = ($password) === $row['password'];
             if ($isPasswordMatched) {
                 return $row;
             }
