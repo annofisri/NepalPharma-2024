@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home</title>
+  <title>Nepal Pharma Expo 2024 | Pharmaceutical Exhibition in Nepal</title>
   <?php include_once './includes/head.php'; ?>
 </head>
 
@@ -87,7 +87,7 @@
           <div class="exhibitor-description">
             Pharmaceutical Herbal processing plants & Equipments Laboratory and Analytical Techniques / Instruments / Technologies / Services Chemical and Reagents...
           </div>
-          <a class="join-expo-button">
+          <a href="/exhibitors-detail" class="join-expo-button">
             View More
           </a>
 
@@ -104,9 +104,9 @@
             </defs>
           </svg>
           <div class="visitor-description">
-            Pharmaceutical Herbal processing plants & Equipments Laboratory and Analytical Techniques / Instruments / Technologies / Services Chemical and Reagents...
+          We welcome visitors from all kinds of fields. From Doctors, Health Professionals to Business Development managers and professionals. Visitors from following sectors are encouraged to come...
           </div>
-          <a class="join-expo-button">
+          <a href="/visitors-detail" class="join-expo-button">
             View More
           </a>
         </div>
@@ -178,30 +178,129 @@
           </svg>
           <div class="event-slider">
             <div class="col-md-3 me-3">
-              <div class="event-img">
-                <img src="images/event-highlights-1.jpg.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+              <div class="event-img"><img src="/images/expo-events/events-0001.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
             <div class="col-md-3 me-3">
-              <div class="event-img">
-                <img src="images/event-highlights-2.jpg.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+              <div class="event-img"><img src="/images/expo-events/events-0002.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
             <div class="col-md-3 me-3">
-              <div class="event-img">
-                <img src="images/event-highlights-3.jpg.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+              <div class="event-img"><img src="/images/expo-events/events-0003.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
             <div class="col-md-3 me-3">
-              <div class="event-img">
-                <img src="images/event-highlights-4.jpg.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+              <div class="event-img"><img src="/images/expo-events/events-0004.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
             <div class="col-md-3 me-3">
-              <div class="event-img">
-                <img src="images/event-highlights-1.jpg.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+              <div class="event-img"><img src="/images/expo-events/events-0005.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0006.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0007.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0008.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0009.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0010.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0011.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0012.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0013.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0014.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0015.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0016.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0017.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0018.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0019.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0020.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0021.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0022.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0023.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0024.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0025.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0026.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0027.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0028.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0029.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0030.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0031.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0032.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0033.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0034.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0035.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0036.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0037.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0038.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0039.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0040.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            <div class="col-md-3 me-3">
+              <div class="event-img"><img src="/images/expo-events/events-0041.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
+            </div>
+            
           </div>
         </div>
       </div>

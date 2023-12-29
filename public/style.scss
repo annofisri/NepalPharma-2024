@@ -936,10 +936,8 @@ body {
         // border: none;
         background: var(--color-white-50, #fff);
         padding: 10px 25px;
-        background: url(icons/search-icon.svg) no-repeat left;
-        background-size: 20px;
-        //put background image at the end of the input
-        background-position: 95%;
+        // background: url(icons/search-icon.svg) no-repeat left;
+        // background-size: 20px;
       }
     }
     .table-container {
@@ -1521,6 +1519,7 @@ table.floor-plan {
   &.booked {
     background-color: red !important;
     color: white;
+    cursor: no-drop;
   }
 
   &.stall__vendor-registered {

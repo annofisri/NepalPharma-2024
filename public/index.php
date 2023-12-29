@@ -1,6 +1,16 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(0);
 session_start();
+
+if(isset($_GET['demo'])){
+    $_SESSION['demo'] = true;
+}
+
+if(!isset($_SESSION['demo'])){
+    include('../coming_soon.html');
+    exit();
+}
+
 require_once __DIR__ . '/../core/TableManager.php';
 
 include_once './consoleLog.php';

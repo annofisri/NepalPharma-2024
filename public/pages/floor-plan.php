@@ -49,10 +49,6 @@
         <div id="organizers"></div>
     </section>
 
-
-
-
-
     <?php include_once __DIR__ . '/tags/organizors-sponsors.php'; ?>
 
     <?php include_once __DIR__ . '/tags/contact-us.php'; ?>
@@ -69,9 +65,9 @@
                 success: function(response) {
                     if (response.success) {
                         bookedStalls = response.data;
-                        $('.stall').removeClass('booked');
+                        $('.stall').removeClass('booked').attr('title', 'Vacant');
                         bookedStalls.forEach(function(stall) {
-                            $('[data-stall-name="' + stall + '"]').closest('.stall').addClass('booked');
+                            $('[data-stall-name="' + stall + '"]').closest('.stall').addClass('booked').attr('title', 'Booked');
                         });
 
                     }

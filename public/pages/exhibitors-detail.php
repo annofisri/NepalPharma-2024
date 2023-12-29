@@ -71,7 +71,7 @@
               Facility.
             </li>
             <li>Nanotechnology Laboratory Services.</li>
-            <li>Association, Magazines etc</li>
+            <li>Association, Magazines etc.</li>
             <li>
               Environmental and Pollution Control Systems, Measuring and
               Testing Equipment, Quality Control Service Analytical and

@@ -321,7 +321,7 @@
                 <div>
                   <div class="member-name">Radha Raman Prasad Shah
                   </div>
-                  <div class="member-post">
+                  <div class="member-post">Advisor
                   </div>
                 </div>
               </div>

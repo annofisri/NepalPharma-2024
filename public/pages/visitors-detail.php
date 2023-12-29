@@ -94,7 +94,7 @@
       </div>
 
     </div>
-    <div id="organizers"></div>
+    
 
   </section>
 

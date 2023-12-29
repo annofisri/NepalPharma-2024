@@ -1,5 +1,13 @@
 <?php
 session_start();
+// Set session cookie parameters
+$lifetime = 3600 * 24; // Lifetime in seconds (24 hours)
+$path = '/';
+$domain = ''; // Set to your domain
+$secure = true; // Use true if using HTTPS
+$httponly = true; // Set HttpOnly flag
+
+session_set_cookie_params($lifetime, $path, $domain, $secure, $httponly);
 
 $error = '';
 
@@ -15,8 +23,8 @@ if (isset($_POST["btnLogin"])) {
 
   require_once __DIR__ . '/../../core/consoleLog.php';
 
-  require_once __DIR__ . '/../../core/Login.php';
   require_once __DIR__ . '/../../core/db-config.php';
+  require_once __DIR__ . '/../../core/Login.php';
 
   $user = new Login();
   $username = $_POST['email'];

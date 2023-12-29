@@ -4,6 +4,11 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'nepal_pharma_expo_2024');
+// define('DB_HOST', 'sdb-52.hosting.stackcp.net');
+// define('DB_USER', 'pharma_expo_2024-353030342b2d');
+// define('DB_PASS', 'laidbn6c3m');
+// define('DB_NAME', 'pharma_expo_2024-353030342b2d');
+
 define('ROOT_PATH', __DIR__ . '/..');
 define('MAX_UPLOAD_IMAGE_SIZE', 1024 * 1024 * 20);
 

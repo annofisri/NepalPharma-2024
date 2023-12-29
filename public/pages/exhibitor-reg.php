@@ -59,8 +59,9 @@ foreach ($stalls as $stall) {
           <div class="reg-title">Exhibitor's Details</div>
           <form class="row g-3" id="step-1">
             <div class="col-12">
-              <label for="companyname" class="form-label">Name of Company / Organization
-                <span class="text-danger">*</span></label>
+              <label for="companyname" class="form-label">
+                Name of Company / Organization<span class="text-danger">*</span>
+              </label>
               <input type="text" class="form-control" id="companyname" name="companyname" required />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
@@ -72,8 +73,8 @@ foreach ($stalls as $stall) {
               <input type="text" class="form-control" id="designation1" name="designation1" />
             </div>
             <div class="col-md-6 d-flex flex-column align-items-start px-2">
-              <label for="contactperson" class="form-label">Name of the Contact Person
-                <span class="text-danger">*</span>
+              <label for="contactperson" class="form-label">
+                Name of the Contact Person<span class="text-danger">*</span>
               </label>
               <input type="text" class="form-control" id="contactperson" name="contactperson" required />
             </div>

@@ -20,7 +20,7 @@
           8-10 March 2024
         </div>
         <div class="join-expo-container-date-nepali">
-          (25-27 Falgun 2080)
+          &nbsp; (25-27 Falgun 2080)
         </div>
       </div>
     </div>
