@@ -10,7 +10,6 @@ class TableManager
 
     public function __construct(private $table)
     {
-        $this->table = $table;
         $this->db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';', DB_USER, DB_PASS, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8", PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC));
     }
     public function getTable()
@@ -150,11 +149,6 @@ class TableManager
             $uploadOk = 0;
         }
 
-        // Check if file already exists
-        // if (file_exists($target_file)) {
-        //     $uploadOk = 0;
-        // }
-
         // Check file size
         if ($file["size"] > MAX_UPLOAD_IMAGE_SIZE) {
             $uploadOk = 0;
@@ -165,8 +159,6 @@ class TableManager
         ) {
             $uploadOk = 0;
         }
-        var_dump($uploadOk, $imageFileType);
-
         // Check if $uploadOk is set to 0 by an error
 
 
