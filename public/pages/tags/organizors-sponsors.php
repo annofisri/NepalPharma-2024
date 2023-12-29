@@ -164,12 +164,11 @@
             <div class="row">
                 <div class="col-md">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/platinum-sponsor.svg" alt="" />
+                        <div class="sponsor-img  plat-sponsor-img">
+                            <img src="images/platinum-sponsor.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Association of Pharmaceutical</div>
-                            <div>Producers of Nepal (APPON)</div>
+                            <div>Elmach Packages Pvt. Ltd.</div>
                         </div>
                     </div>
                 </div>
@@ -180,14 +179,11 @@
             <div class="row">
                 <div class="col-md">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/gov-of-nepal.png" alt="" />
+                        <div class="sponsor-img  diamond-sponsor-img">
+                            <img src="images/diamond-sponsor.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Nepal Government</div>
-                            <div>Ministry of Health & Population</div>
-                            <div>Department of Drug Administration</div>
-                            <div>(DDA)</div>
+                            <div>HVAX Machinery Pvt. Ltd.</div>
                         </div>
                     </div>
                 </div>
@@ -198,16 +194,15 @@
             <div class="row justify-content-center">
                 <div class="col-md-2">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/phan-logo.png.png" alt="" />
+                        <div class="sponsor-img  gold-sponsor-img">
+                            <img src="images/gold-sponsor.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Pharmacy Association of</div>
-                            <div>Nepal (PHAN)</div>
+                            <div>NPM Machinery Pvt. Ltd.</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <!-- <div class="col-md-2">
                     <div class="sponsors">
                         <div class="sponsor-img pt-3">
                             <img src="images/cni-logo.png" alt="" />
@@ -251,7 +246,7 @@
                             <div>Association of Nepal (PDAN)</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

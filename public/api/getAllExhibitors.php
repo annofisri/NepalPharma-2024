@@ -18,15 +18,19 @@ $success = '';
 
 if (empty($errors)) {
     $result = $tableExhibitor->getAll();
+    usort($result, function ($a, $b) {
+        return $b['created_at'] <=> $a['created_at'];
+    });
     if ($data['status'] == 'active') {
         $result = array_filter($result, function ($exhibitor) {
             return $exhibitor['status'] == 'active';
         });
+        usort($result, function ($a, $b) {
+            return $a['name'] <=> $b['name'];
+        });
     }
 
-    usort($result, function ($a, $b) {
-        return $a['name'] <=> $b['name'];
-    });
+
 
     $success = 'Exhibitors fetched successfully';
     $output['success'] = true;
