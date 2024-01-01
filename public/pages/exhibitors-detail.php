@@ -40,7 +40,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="exhibitors-detail-box">
-            <img src="images/exhibitors-detail.png" alt="exhibitors-detail" class="w-100 h-100 object-fit-cover" />
+            <img src="images/exhibitors-detail.jpg" alt="exhibitors-detail" class="w-100 h-100 object-fit-cover" />
           </div>
         </div>
         <div class="col-md-6 exhibitors-detail-desc">

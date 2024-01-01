@@ -187,6 +187,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md">
+                    <div class="sponsors">
+                        <div class="sponsor-img  diamond-sponsor-img">
+                            <img src="images/diamond-sponsor1.jpg" alt="" />
+                        </div>
+                        <div class="sponsor-name">
+                            <div>Pacific commercial company</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="gold-sponsor">

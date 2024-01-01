@@ -1,7 +1,25 @@
 RewriteEngine On
 RewriteBase /
 
-# Pass any other requests to index.php with SECTION and ACTION parameters
+# Pass any other requests to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+
+ExpiresActive ON
+ExpiresByType "image/jpeg" "A31536000"
+ExpiresByType "image/jpg" "A31536000"
+ExpiresByType "image/gif" "A31536000"
+ExpiresByType "image/png" "A31536000"
+ExpiresByType "image/svg+xml" "A31536000"
+ExpiresByType "image/webp" "A31536000"
+ExpiresByType "image/vnd.microsoft.icon" "A31536000"
+ExpiresByType "image/x-icon" "A31536000"
+ExpiresByType "image/ico" "A31536000"
+ExpiresByType "font/ttf" "A31536000"
+ExpiresByType "font/otf" "A31536000"
+ExpiresByType "application/x-font-opentype" "A31536000"
+ExpiresByType "application/x-font-woff" "A31536000"
+ExpiresByType "application/x-font-ttf" "A31536000"
+ExpiresByType "application/font-woff" "A31536000"
+ExpiresByType "application/vnd.ms-fontobject" "A31536000"

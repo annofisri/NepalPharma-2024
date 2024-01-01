@@ -167,7 +167,7 @@ body {
 .circular-images-section {
   padding: 80px 0px;
   padding-top: 200px;
-  background: url("images/circular-img-bg.png");
+  background: url("images/circular-img-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -280,7 +280,7 @@ body {
 }
 
 .why-visit {
-  background-image: url("images/why-visit-bg.png"); /* Replace 'your-image.jpg' with the path to your image */
+  background-image: url("images/why-visit-bg.jpg"); /* Replace 'your-image.jpg' with the path to your image */
   background-size: cover; /* This scales the image to cover the entire div */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Set the width of the div */
@@ -536,7 +536,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url("images/about-us-bg.png");
+  background: url("images/about-us-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -556,7 +556,7 @@ body {
 }
 
 .organizers-bg {
-  background: url("images/organizers-bg.png");
+  background: url("images/organizers-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1102,16 +1102,16 @@ body {
   background: #8dc63f;
 }
 .floor-section .floor-selection .category-box .diamond {
-  background: #b3b0d9;
+  background: #f9cbdf;
 }
 .floor-section .floor-selection .category-box .gold {
-  background: #4abfd9;
+  background: #7acdc8;
 }
 .floor-section .floor-selection .category-box .silver {
-  background: #f391bc;
+  background: #f6989d;
 }
 .floor-section .floor-selection .category-box .international {
-  background: #e5d44c;
+  background: #cbc26b;
 }
 .floor-section .floor-selection .category-box .vendor {
   background: #c3c4c6;

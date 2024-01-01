@@ -24,7 +24,7 @@
   <section class="circular-images-section">
     <div class="container text-center circular-images-section-body">
       <div class="circular-photos">
-        <img src="images/circular-img.png" class="circular-center-image h-100" />
+        <img src="images/circular-img.png" class="circular-center-image h-100" alt="" />
       </div>
       <div class="expo-2024">
         <div class="text-center expo-2024-title">Visit Nepal Pharma Expo 2024</div>
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <img src="images/message-form.png" class="w-100 h-100">
+          <img src="images/message-form.png" class="w-100 h-100" alt="">
         </div>
         <div class="col-md-7">
           <div class="message-form-title ps-2">Message From</div>
@@ -154,7 +154,7 @@
         </div>
         <div class="col-md-6 text-center d-flex justify-content-center">
           <div class="why-visit-img">
-            <img src="images/why-visit.png" alt="why-visit-img" class="w-100 h-100" />
+            <img src="images/why-visit.jpg" alt="why-visit-img" class="w-100 h-100" />
           </div>
         </div>
       </div>
