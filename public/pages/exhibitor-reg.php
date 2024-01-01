@@ -64,29 +64,29 @@ foreach ($stalls as $stall) {
               </label>
               <input type="text" class="form-control" id="companyname" name="companyname" required />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6">
               <label for="chiefexecutive" class="form-label">Name of Chief Executive</label>
               <input type="text" class="form-control" id="chiefexecutive" name="chiefexecutive" />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="designation1" class="form-label">Designation</label>
               <input type="text" class="form-control" id="designation1" name="designation1" />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="contactperson" class="form-label">
                 Name of the Contact Person<span class="text-danger">*</span>
               </label>
               <input type="text" class="form-control" id="contactperson" name="contactperson" required />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="designation2" class="form-label">Designation<span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="designation2" name="designation2" required />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="address" class="form-label">Address<span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="address" name="address" required />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="city" class="form-label">City</label>
               <input type="text" class="form-control" id="city" name="city" />
             </div>
@@ -105,11 +105,11 @@ foreach ($stalls as $stall) {
               <input type="tel" class="form-control" id="phone" name="phone" required />
             </div>
 
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="email" class="form-label">Email Address<span class="text-danger">*</span></label>
               <input type="email" class="form-control" id="email" name="email" required />
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start px-2">
+            <div class="col-lg-6 ">
               <label for="website" class="form-label">Website</label>
               <input type="text" class="form-control" id="website" name="website" />
             </div>
@@ -123,7 +123,7 @@ foreach ($stalls as $stall) {
 
       <div class="stall-selection-section d-none">
         <div class="row floor-section">
-          <div class="col-md-6 floor-selection">
+          <div class="col-lg-6 floor-selection">
             <div class="selection-head d-flex justify-content-between">
               <div class="title">
                 Please select your type of stall*
@@ -218,14 +218,14 @@ foreach ($stalls as $stall) {
 
             </div>
           </div>
-          <div class="col-md-6 floor-charges">
+          <div class="col-lg-6 floor-charges">
 
             <div class="box">
               <div class="head">
                 <div class="title ps-2">
                   Exhibition Stall Charges
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="486" height="20" viewBox="0 0 486 20" fill="none">
+                <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="486" height="20" viewBox="0 0 486 20" fill="none">
                   <path d="M0 0H486L137.113 14.0476L8.85649 20L0 0Z" fill="url(#paint0_linear_900_5271)" />
                   <defs>
                     <linearGradient id="paint0_linear_900_5271" x1="486" y1="10" x2="-1.19802e-06" y2="9.99994" gradientUnits="userSpaceOnUse">
@@ -236,35 +236,23 @@ foreach ($stalls as $stall) {
                 </svg>
               </div>
 
-              <?php
+              <table class="table table-borderless">
+                <tbody>
 
-              $result = '';
-
-              foreach (STALL_TYPES as $key => $value) {
-
-                $result .= '
-                <div class="row category-list-item">
-                  <div class="col-md-6">
-                    ' . $value['name'] . '
-                  </div>
-                  <div class="col-md-3">
-                    ' . $value['quantity'] . '
-                  </div>
-                  <div class="col-md-3">
-                    ' . $value['price'] . ' INR
-                  </div>
-                </div>
-                ';
-              }
-
-              echo $result;
-              ?>
-
-
-
+                  <?php
+                  $result = '';
+                  foreach (STALL_TYPES as $type) {
+                    $result .= '<tr>
+                    <td>' . $type['name'] . '</td>
+                    <td>' . $type['quantity'] . '</td>
+                    <td>' . $type['price'] . '</td>
+                  </tr>';
+                  }
+                  echo $result;
+                  ?>
+                </tbody>
+              </table>
             </div>
-
-
           </div>
         </div>
 

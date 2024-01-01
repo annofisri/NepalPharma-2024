@@ -46,7 +46,7 @@
         <div class="col-md-6 exhibitors-detail-desc">
           <div>
             <div class="exhibitor-profile ps-2">Exhibitor’s Profile</div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="317" height="20" viewBox="0 0 317 20" fill="none">
+            <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="317" height="20" viewBox="0 0 317 20" fill="none">
               <path d="M0 0H317L89.434 14.0476L5.77677 20L0 0Z" fill="url(#paint0_linear_865_3788)" />
               <defs>
                 <linearGradient id="paint0_linear_865_3788" x1="317" y1="10" x2="-7.81424e-07" y2="9.99998" gradientUnits="userSpaceOnUse">

@@ -1,18 +1,14 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-  <div class="navber-container container d-flex justify-content-between ps-5">
-    <!-- <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0 gap-3 ms-5">
+  <div class="container navber-container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="register-now small" href="/exhibitor-reg">
+      Register Now
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About
@@ -37,7 +33,6 @@
           <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Exhibitors Details
           </a>
-          <!-- <img src="icons/dropdown.svg" alt="Dropdown svg" /> -->
 
           <ul class="dropdown-menu">
             <li>
@@ -66,22 +61,7 @@
       </ul>
     </div>
 
-    <!-- <a href="#" class="nav-item dropdown register-now">
-      <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Register Now
-      </div>
-      <ul class="dropdown-menu">
-        <li>
-          <a class="dropdown-item" href="/visitors-reg">Visitors Registration</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="/exhibitor-reg">Exhibitors Registration
-          </a>
-        </li>
-      </ul>
-    </a> -->
-
-    <a class="register-now" href="/exhibitor-reg">
+    <a class="register-now big" href="/exhibitor-reg">
       Register Now
     </a>
   </div>

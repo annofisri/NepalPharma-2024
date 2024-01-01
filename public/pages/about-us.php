@@ -42,7 +42,7 @@
           <div class="what-is-texts">
             <div>
               <div class="what-is-title ps-2">What is Nepal Pharma Expo?</div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="508" height="20" viewBox="0 0 508 20" fill="none">
+              <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="508" height="20" viewBox="0 0 508 20" fill="none">
                 <path d="M0 0H508L143.32 14.0476L9.2574 20L0 0Z" fill="url(#paint0_linear_865_3425)" />
                 <defs>
                   <linearGradient id="paint0_linear_865_3425" x1="508" y1="10" x2="-1.25225e-06" y2="9.99994" gradientUnits="userSpaceOnUse">

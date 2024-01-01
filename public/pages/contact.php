@@ -72,7 +72,7 @@
           <div class="col-md-4 contact-us">
             <div>
               <div class="contact-us-title ps-2">Contact Us</div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="295" height="20" viewBox="0 0 295 20" fill="none">
+              <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="295" height="20" viewBox="0 0 295 20" fill="none">
                 <path d="M0 0H295L83.2272 14.0476L5.37585 20L0 0Z" fill="url(#paint0_linear_851_468)" />
                 <defs>
                   <linearGradient id="paint0_linear_851_468" x1="295" y1="10" x2="-7.27193e-07" y2="9.99998" gradientUnits="userSpaceOnUse">

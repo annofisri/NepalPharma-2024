@@ -4,7 +4,6 @@ body {
   background: var(--BG-3, #fdfdff);
 }
 
-/* For large screens (e.g., screens wider than 992px) */
 .venue {
   background: var(--BG-2, #e7e0ef);
   align-items: center;
@@ -32,7 +31,8 @@ body {
 }
 
 .navbar {
-  height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
   color: var(--Text-1, #111112);
   font-size: 18px;
@@ -53,7 +53,6 @@ body {
   flex-direction: row;
 }
 .navber-container .collapse.navbar-collapse {
-  padding-left: 100px;
   color: var(--Text-1, #111112);
   font-size: 18px;
   font-style: normal;
@@ -63,13 +62,9 @@ body {
 
 .register-now {
   color: white;
-  display: flex;
+  text-align: center;
   width: 200px;
   padding: 9px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 4px;
   margin-left: auto;
   text-decoration: none;
@@ -83,8 +78,8 @@ body {
 }
 
 .join-expo-container {
-  width: 760px;
-  padding: 20px 40px;
+  width: 70%;
+  padding: 20px 2%;
   flex-direction: column;
   top: 50%;
   left: 50%;
@@ -185,10 +180,6 @@ body {
   line-height: 175%;
 }
 
-.circular-photos {
-  height: 500px;
-}
-
 .expo-2024-title {
   font-size: 55px;
   font-style: normal;
@@ -202,7 +193,7 @@ body {
 
 .expo-2024-description {
   font-size: 18px;
-  padding: 0px 180px;
+  padding: 0px 15%;
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
@@ -226,36 +217,6 @@ body {
   line-height: 175%; /* 31.5px */
 }
 
-/* For small screens (e.g., screens up to 992px wide) */
-@media (max-width: 992px) {
-  .circular-photos {
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  .circular-center-image {
-    height: 200px;
-  }
-  .join-expo-container-title {
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 175%;
-  }
-  .expo-2024-title {
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 175%;
-  }
-  .expo-2024-description {
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .join-expo-container-title {
-    font-size: 18px;
-  }
-}
 .profile-section {
   background: url("images/profile-bg.png"), lightgray 50%/cover no-repeat;
   padding: 80px 0px;
@@ -290,7 +251,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 0px 30px;
 }
 .why-visit .why-visit-texts .why-visit-title {
@@ -604,7 +564,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0px 98px;
+  padding: 0px 8%;
   padding-bottom: 20px;
 }
 .what-is .what-is-texts .what-is-title {
@@ -669,7 +629,7 @@ body {
   padding: 80px 0px;
 }
 .exhibitors-detail .row {
-  padding: 0px 60px;
+  padding: 0px 5%;
 }
 .exhibitors-detail .row .col-md-6 {
   display: flex;
@@ -716,6 +676,9 @@ body {
 
 .visitors-detail-section {
   background: url("images/visitors-detail-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 0px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -733,7 +696,7 @@ body {
   padding: 80px 0px;
 }
 .exhibitor-reg-form .reg-box {
-  margin: 0px 231px;
+  margin: 0px 15%;
   border-radius: 6px;
   background: var(--BG-2, #e7e0ef);
 }
@@ -946,7 +909,7 @@ body {
 }
 
 .left-padding {
-  padding-left: 100px;
+  padding-left: 8%;
 }
 
 .contact-us {
@@ -1039,8 +1002,7 @@ body {
   border-radius: 4px;
   border: 1px solid var(--Hover, #581756);
   display: flex;
-  width: 200px;
-  padding: 9px;
+  padding: 9px 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1144,7 +1106,7 @@ body {
 
 .estimated-amount {
   margin-top: 60px;
-  padding: 0px 200px;
+  padding: 0px 20%;
 }
 .estimated-amount .title {
   color: var(--Text-3, #121212);
@@ -1532,4 +1494,223 @@ table tbody.lane-area {
 .modal-success .modal-body .success-desc p {
   margin: 0px;
   padding: 0px;
+}
+
+.event-highlights .underline-svg {
+  width: unset;
+}
+
+@media (max-width: 1200px) {
+  .circular-images-section {
+    padding-top: 90px;
+  }
+  .floor-plan-details .underline-svg {
+    width: 456px;
+  }
+  .join-expo-container-title {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+  }
+  .join-expo-container-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+  }
+  .location {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 175%;
+  }
+}
+@media (min-width: 992px) {
+  .register-now.big {
+    display: block;
+  }
+  .register-now.small {
+    display: none;
+  }
+}
+/* For small screens (e.g., screens up to 992px wide) */
+@media (max-width: 992px) {
+  .why-visit-texts .underline-svg {
+    width: 276px;
+  }
+  .floor-plan-details .underline-svg {
+    width: 336px;
+  }
+  .circular-photos {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .circular-center-image {
+    height: 200px;
+  }
+  .join-expo-container-title {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+  }
+  .expo-2024-title {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+  }
+  .expo-2024-description {
+    font-size: 15px;
+  }
+  .register-now.big {
+    display: none;
+  }
+  .register-now.small {
+    display: block;
+  }
+  .circular-center-image {
+    width: 100%;
+  }
+  .join-expo-container-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+  }
+  .location {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 175%;
+  }
+  .profile-section .underline-svg {
+    width: 300px;
+  }
+  .floor-charges {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .exhibitor {
+    margin-bottom: 40px;
+  }
+  .why-visit-texts .underline-svg {
+    width: 350px;
+  }
+  .floor-plan-details .underline-svg {
+    width: 516px;
+  }
+  .exhibitor-title .underline-svg {
+    width: 280px;
+  }
+  .exhibitors-detail .row {
+    flex-direction: column-reverse;
+  }
+  .committee-member {
+    margin-bottom: 40px;
+  }
+  .search-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .search-bar div:nth-child(1) {
+    font-size: 18px !important;
+  }
+  .search-bar .icon {
+    width: 100% !important;
+  }
+  .search-bar input {
+    width: 100% !important;
+  }
+  .exhibitors-table .tab-content .table-container .table .table-head {
+    font-size: 16px !important;
+  }
+  .floor-plan-main-section .underline-svg {
+    width: 512px;
+  }
+}
+@media (max-width: 654px) {
+  .floor-plan-details .underline-svg {
+    width: 360px;
+  }
+  .join-expo-container-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 600px) {
+  .floor-charges .underline-svg {
+    width: 350px;
+  }
+  .floor-section .floor-selection .selection-head .title {
+    font-size: 20px;
+  }
+  .what-is .what-is-texts .what-is-title {
+    font-size: 25px;
+  }
+  .what-is .what-is-texts .underline-svg {
+    width: 400px;
+  }
+  .floor-plan-details .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-visit .why-visit-img {
+    height: 350px;
+    width: 350px;
+  }
+  .why-visit-texts .underline-svg {
+    width: 280px;
+  }
+  .floor-plan-details .underline-svg {
+    width: 280px;
+  }
+  .profile-section .underline-svg {
+    width: 280px;
+  }
+  .join-expo-container-description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .location {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.2;
+  }
+  .expo-2024-title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .join-expo-container-date-english {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .join-expo-container-date-nepali {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .join-expo-button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .what-is .what-is-texts .what-is-title {
+    font-size: 20px;
+  }
+  .what-is .what-is-texts .underline-svg {
+    width: 300px;
+  }
+  .floor-plan-main-section .underline-svg {
+    width: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */
