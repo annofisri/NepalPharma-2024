@@ -78,7 +78,7 @@ body {
 }
 
 .join-expo-container {
-  width: 70%;
+  width: 55%;
   padding: 20px 2%;
   flex-direction: column;
   top: 50%;
@@ -1500,7 +1500,15 @@ table tbody.lane-area {
   width: unset;
 }
 
+@media (max-width: 1400px) {
+  .join-expo-container {
+    width: 65%;
+  }
+}
 @media (max-width: 1200px) {
+  .join-expo-container {
+    width: 70%;
+  }
   .circular-images-section {
     padding-top: 90px;
   }
@@ -1591,6 +1599,9 @@ table tbody.lane-area {
   }
 }
 @media (max-width: 768px) {
+  .join-expo-container {
+    width: 75%;
+  }
   .exhibitor {
     margin-bottom: 40px;
   }
