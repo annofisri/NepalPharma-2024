@@ -1,13 +1,5 @@
 <?php
 session_start();
-// Set session cookie parameters
-$lifetime = 3600 * 24; // Lifetime in seconds (24 hours)
-$path = '/';
-$domain = ''; // Set to your domain
-$secure = true; // Use true if using HTTPS
-$httponly = true; // Set HttpOnly flag
-
-session_set_cookie_params($lifetime, $path, $domain, $secure, $httponly);
 
 $error = '';
 

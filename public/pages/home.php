@@ -31,7 +31,7 @@
 
         <div class="text-center expo-2024-description">
           Pharma expos are important platforms to showcase the developments in Pharmaceutical industry. So, we
-          <span style="color: var(--Text-1, #ED1B24);font-size: 18px;font-style: normal;font-weight: 700;">Association of Pharmaceutical Producers of Nepal (APPON)</span>
+          <span class="big-font">Association of Pharmaceutical Producers of Nepal (APPON)</span>
           plan to organize our 8th Nepal Pharma Expo 2024.
           The wait is nearly over, Nepal Pharma Expo 2022 is to be held on Nepal.
         </div>
@@ -316,7 +316,7 @@
         <div class="col-md-6 floor-view">
 
 
-          <img src="images/floor-plan.png" alt="floor-plan" class="img-fluid w-100" />
+          <img src="images/floor-plan.jpg" alt="floor-plan" class="img-fluid w-100 blend" />
 
         </div>
         <div class="col-md-6 floor-plan-details">
@@ -332,8 +332,8 @@
           </svg>
 
           <div class="d-flex">
-            <div class="category-colors" style="width:200px; margin-top:40px;">
-              <img src="images/category-color.png" alt="" class="w-100" />
+            <div class="category-colors">
+              <img src="images/category-color.jpg" alt="" class="w-100 blend" />
             </div>
 
 

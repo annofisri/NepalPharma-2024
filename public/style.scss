@@ -206,7 +206,9 @@ body {
 .circular-photos {
   height: 500px;
 }
-
+.category-colors {
+  width:200px; margin-top:40px;
+}
 .expo-2024-title {
   font-size: 55px;
   font-style: normal;
@@ -223,6 +225,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
+
+  .big-font{
+    color: var(--Text-1, #ED1B24);font-size: 18px;font-style: normal;font-weight: 700;
+  }
+
 }
 
 .message-form {
@@ -1540,35 +1547,35 @@ table.floor-plan {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d3d1e9;
+    background-color: #f9cbdf;
     height: 130px;
   }
   &.stall__gold {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #74cee2;
+    background-color: #7acdc8;
     height: 100px;
   }
   &.stall__silver {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8c1d9;
+    background-color: #f6989d;
     height: 70px;
   }
   &.stall__international-exhibitor {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ecdf7a;
+    background-color: #cbc26b;
     height: 80px;
     width: 40px;
   }
 }
 
 table tbody.lane-area {
-  background-color: black;
+  background-color: white;
 }
 
 .gate--down {
