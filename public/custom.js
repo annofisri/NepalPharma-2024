@@ -45,4 +45,32 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+  // // Default screen size
+  // var defaultScreenSize = 1381; // Change this to your default screen size
+  // // console.log("hi" + $(window).width());
+
+  // $(window)
+  //   .on("resize", function () {
+  //     // Get current screen width
+  //     var screenWidth = $(window).width();
+
+  //     // Loop over each SVG
+  //     $(".underline-svg").each(function () {
+  //       // Get initial SVG width from width attribute
+  //       var initialSvgWidth = $(this).attr("width");
+  //       console.log(initialSvgWidth);
+
+  //       // Calculate ratio
+  //       var ratio = initialSvgWidth / defaultScreenSize;
+
+  //       // Calculate new SVG width
+  //       var newSvgWidth = screenWidth * ratio;
+  //       console.log(newSvgWidth);
+
+  //       // Set new SVG width
+  //       $(this).css("width", newSvgWidth);
+  //     });
+  //   })
+  //   .trigger("resize"); // Trigger resize event initially to set the width
 });

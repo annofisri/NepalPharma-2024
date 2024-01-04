@@ -43,7 +43,7 @@
             <div class="col committee-mem-title ps-2">
               Committee Members
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="378" height="20" viewBox="0 0 378 20" fill="none">
+            <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="378" height="20" viewBox="0 0 378 20" fill="none">
               <path d="M0 0H378L106.644 14.0476L6.88838 20L0 0Z" fill="url(#paint0_linear_865_3534)" />
               <defs>
                 <linearGradient id="paint0_linear_865_3534" x1="378" y1="10" x2="-9.31792e-07" y2="9.99997" gradientUnits="userSpaceOnUse">

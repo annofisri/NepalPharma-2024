@@ -48,7 +48,7 @@
         </div>
         <div class="col-md-7">
           <div class="message-form-title ps-2">Message From</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
+          <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_2154)" />
             <defs>
               <linearGradient id="paint0_linear_761_2154" x1="439" y1="10" x2="-1.08216e-06" y2="9.99995" gradientUnits="userSpaceOnUse">
@@ -75,7 +75,7 @@
       <div class="row">
         <div class="exhibitor col-md-6">
           <div class="exhibitor-title ps-2">Exhibitors Profile</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
+          <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_1795)" />
             <defs>
               <linearGradient id="paint0_linear_761_1795" x1="439" y1="10" x2="-1.08216e-06" y2="9.99995" gradientUnits="userSpaceOnUse">
@@ -94,7 +94,7 @@
         </div>
         <div class="visitor col-md-6">
           <div class="visitor-title ps-2">Visitors Profile</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
+          <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="439" height="20" viewBox="0 0 439 20" fill="none">
             <path d="M0 0H439L123.853 14.0476L8 20L0 0Z" fill="url(#paint0_linear_761_1795)" />
             <defs>
               <linearGradient id="paint0_linear_761_1795" x1="439" y1="10" x2="-1.08216e-06" y2="9.99995" gradientUnits="userSpaceOnUse">
@@ -104,7 +104,7 @@
             </defs>
           </svg>
           <div class="visitor-description">
-          We welcome visitors from all kinds of fields. From Doctors, Health Professionals to Business Development managers and professionals. Visitors from following sectors are encouraged to come...
+            We welcome visitors from all kinds of fields. From Doctors, Health Professionals to Business Development managers and professionals. Visitors from following sectors are encouraged to come...
           </div>
           <a href="/visitors-detail" class="join-expo-button">
             View More
@@ -119,7 +119,7 @@
         <div class="col-md-6">
           <div class="why-visit-texts">
             <div class="why-visit-title ps-2">Why Should You Visit?</div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
+            <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="396" height="20" viewBox="0 0 582 20" fill="none">
               <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_832_1369)" />
               <defs>
                 <linearGradient id="paint0_linear_832_1369" x1="582" y1="10" x2="-1.43466e-06" y2="9.99992" gradientUnits="userSpaceOnUse">
@@ -167,7 +167,7 @@
       <div class="event-highlights">
         <div class="row">
           <div class="event-title col-12">Event Highlights</div>
-          <svg class="w-auto" xmlns="http://www.w3.org/2000/svg" width="415" height="20" viewBox="0 0 415 20" fill="none">
+          <svg class="underline-svg" class="w-auto" xmlns="http://www.w3.org/2000/svg" width="415" height="20" viewBox="0 0 415 20" fill="none">
             <path d="M0 0H415L117.082 14.0476L7.56264 20L0 0Z" fill="url(#paint0_linear_832_1702)" />
             <defs>
               <linearGradient id="paint0_linear_832_1702" x1="415" y1="10" x2="-1.023e-06" y2="9.99996" gradientUnits="userSpaceOnUse">
@@ -300,7 +300,7 @@
             <div class="col-md-3 me-3">
               <div class="event-img"><img src="/images/expo-events/events-0041.jpg" alt="" class="w-100 h-100 object-fit-cover"></div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -321,7 +321,7 @@
         </div>
         <div class="col-md-6 floor-plan-details">
           <div class="floor-plan-title ps-2">Floor Plan For Exhibitors & Visitors</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
+          <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
             <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_832_2649)" />
             <defs>
               <linearGradient id="paint0_linear_832_2649" x1="582" y1="10" x2="-1.43466e-06" y2="9.99992" gradientUnits="userSpaceOnUse">

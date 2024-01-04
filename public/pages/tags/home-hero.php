@@ -1,6 +1,6 @@
 <section class="hero-section position-relative">
   <div class="home-hero-image">
-    <img src="images/background.jpg" alt="Hero Image" class="w-100 h-100" />
+    <img src="images/background.jpg" alt="Hero Image" class="w-100 h-100 object-fit-cover" />
   </div>
 
   <div class=" position-absolute d-flex align-items-center justify-content-center join-expo-container">

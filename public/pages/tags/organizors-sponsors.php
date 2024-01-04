@@ -176,8 +176,8 @@
         </div>
         <div class="diamond-sponsor">
             <div class="sponsor-header">Diamond Sponsor</div>
-            <div class="row">
-                <div class="col-md">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
                     <div class="sponsors">
                         <div class="sponsor-img  diamond-sponsor-img">
                             <img src="images/diamond-sponsor.png" alt="" />
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md-3">
                     <div class="sponsors">
                         <div class="sponsor-img  diamond-sponsor-img">
                             <img src="images/diamond-sponsor1.jpg" alt="" />

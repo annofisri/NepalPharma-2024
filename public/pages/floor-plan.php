@@ -32,7 +32,7 @@
                     <div class="title ps-2">
                         Floor Plan For Exhibitors & Visitors
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
+                    <svg class="underline-svg" xmlns="http://www.w3.org/2000/svg" width="582" height="20" viewBox="0 0 582 20" fill="none">
                         <path d="M0 0H582L164.197 14.0476L10.6059 20L0 0Z" fill="url(#paint0_linear_1104_2603)" />
                         <defs>
                             <linearGradient id="paint0_linear_1104_2603" x1="582" y1="10" x2="-1.43466e-06" y2="9.99992" gradientUnits="userSpaceOnUse">
