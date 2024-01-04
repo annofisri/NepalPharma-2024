@@ -375,7 +375,7 @@
                             <div class="title">Stall: ${stall.name} </div>
                             <div class="type">Type: ${stall.category_name} </div>
                             <div class="size">Size: ${stall.size} </div>
-                            <div class="price">Price: ${stall.price} </div>
+                            <div class="price">Price: ${stall.price} INR</div>
                             <div class="status">Status: ${stall.status} </div>
                             <div class="action row mt-2">
                             <div class="col-md-6">

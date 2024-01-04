@@ -183,7 +183,7 @@
                             <img src="images/diamond-sponsor.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>HVAX Machinery Pvt. Ltd.</div>
+                            <div>HVAX Technologies Pvt. Ltd.</div>
                         </div>
                     </div>
                 </div>

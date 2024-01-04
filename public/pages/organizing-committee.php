@@ -490,7 +490,7 @@
                   <img src="images/committee-members/DeepeshPradhan.jpg" alt="Committee Member" class="img-fluid" />
                 </div>
                 <div>
-                  <div class="member-name">Deepesh Pradhan
+                  <div class="member-name">Dipesh Pradhan
                   </div>
                   <div class="member-post">Public Relation SC
                   </div>

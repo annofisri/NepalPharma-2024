@@ -6,8 +6,8 @@ $stalls = $tableStall->getAll();
 $stallsMap = [];
 
 foreach ($stalls as $stall) {
-
-  $stallsMap[$stall['type']][$stall['hall_no']][] = $stall;
+  $hall_no = str_replace(' ', '_', $stall['hall_no']);
+  $stallsMap[$stall['type']][$hall_no][] = $stall;
 }
 
 ?>
@@ -162,7 +162,7 @@ foreach ($stalls as $stall) {
                       Diamond
                     </p>
                     <p class="desc">
-                      6 x 12
+                      6 x 10
                     </p>
                   </div>
                 </button>
@@ -174,7 +174,7 @@ foreach ($stalls as $stall) {
                       Gold
                     </p>
                     <p class="desc">
-                      6 x 10
+                      6 x 7.5
                     </p>
                   </div>
                 </button>
@@ -186,7 +186,7 @@ foreach ($stalls as $stall) {
                       Silver
                     </p>
                     <p class="desc">
-                      6 x 10
+                      6 x 5
                     </p>
                   </div>
                 </button>
@@ -198,7 +198,7 @@ foreach ($stalls as $stall) {
                       International Exhibitor
                     </p>
                     <p class="desc">
-                      3 x 3
+                      6 x 3
                     </p>
                   </div>
                 </button>
@@ -369,7 +369,7 @@ foreach ($stalls as $stall) {
                 </div>
                 <?php
                 $div = '';
-                foreach ($stallsMap['platinum']['Hall A'] as $stall) {
+                foreach ($stallsMap['platinum']['Hall_A'] as $stall) {
                   $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -392,7 +392,7 @@ foreach ($stalls as $stall) {
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title stall-title-head">6*12 sqm Diamond</h5>
+          <h5 class="modal-title stall-title-head">6*10 sqm Diamond</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -402,11 +402,11 @@ foreach ($stalls as $stall) {
             <div class="row">
               <div class="col-md-6">
                 <div class="modal-hall-name">
-                  Hall A
+                  Hall B
                 </div>
                 <?php
                 $div = '';
-                foreach ($stallsMap['diamond']['Hall A'] as $stall) {
+                foreach ($stallsMap['diamond']['Hall_B'] as $stall) {
                   $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -418,11 +418,11 @@ foreach ($stalls as $stall) {
               </div>
               <div class="col-md-6">
                 <div class="modal-hall-name">
-                  Hall B
+                  Hall C
                 </div>
                 <?php
                 $div = '';
-                foreach ($stallsMap['diamond']['Hall B'] as $stall) {
+                foreach ($stallsMap['diamond']['Hall_C'] as $stall) {
                   $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -441,21 +441,37 @@ foreach ($stalls as $stall) {
     </div>
   </div>
   <div class="modal fade" id="goldStallModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title stall-title-head">6*10 sqm Gold</h5>
+          <h5 class="modal-title stall-title-head">6*7.5 sqm Gold</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+              <div class="modal-hall-name">
+                Hall A
+              </div>
+              <?php
+              $div = '';
+              foreach ($stallsMap['gold']['Hall_A'] as $stall) {
+                $div .= '<div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
+                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
+                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
+                  </div>';
+              }
+              echo $div;
+              ?>
+            </div>
+            <div class="col-md-6">
               <div class="modal-hall-name">
                 Hall B
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['gold']['Hall B'] as $stall) {
+              foreach ($stallsMap['gold']['Hall_B'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -476,34 +492,18 @@ foreach ($stalls as $stall) {
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title stall-title-head">6*10 sqm Silver</h5>
+          <h5 class="modal-title stall-title-head">6*5 sqm Silver</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-4">
-              <div class="modal-hall-name">
-                Hall A
-              </div>
-              <?php
-              $div = '';
-              foreach ($stallsMap['silver']['Hall A'] as $stall) {
-                $div .= '<div class="form-check">
-                    <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
-                    <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
-                    ' . ($stall['status'] == 'booked' ? '<div class="booked">(Booked)</div>' : '') . '
-                  </div>';
-              }
-              echo $div;
-              ?>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="modal-hall-name">
                 Hall B
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['silver']['Hall B'] as $stall) {
+              foreach ($stallsMap['silver']['Hall_B'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -513,13 +513,13 @@ foreach ($stalls as $stall) {
               echo $div;
               ?>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="modal-hall-name">
                 Hall C
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['silver']['Hall C'] as $stall) {
+              foreach ($stallsMap['silver']['Hall_C'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -539,7 +539,7 @@ foreach ($stalls as $stall) {
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title stall-title-head">3*3 sqm International Exhibitor</h5>
+          <h5 class="modal-title stall-title-head">6*3 sqm International Exhibitor</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -550,7 +550,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['international_exhibitor']['Hall A'] as $stall) {
+              foreach ($stallsMap['international_exhibitor']['Hall_A'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -566,7 +566,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['international_exhibitor']['Hall B'] as $stall) {
+              foreach ($stallsMap['international_exhibitor']['Hall_B'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -582,7 +582,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['international_exhibitor']['Hall C'] as $stall) {
+              foreach ($stallsMap['international_exhibitor']['Hall_C'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -613,7 +613,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['vendor_registered']['Hall A'] as $stall) {
+              foreach ($stallsMap['vendor_registered']['Hall_A'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -629,7 +629,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['vendor_registered']['Hall B'] as $stall) {
+              foreach ($stallsMap['vendor_registered']['Hall_B'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
@@ -645,7 +645,7 @@ foreach ($stalls as $stall) {
               </div>
               <?php
               $div = '';
-              foreach ($stallsMap['vendor_registered']['Hall C'] as $stall) {
+              foreach ($stallsMap['vendor_registered']['Hall_C'] as $stall) {
                 $div .= '<div class="form-check">
                     <input class="form-check-input" type="checkbox" data-stall-type="' . $stall['type'] . '" id="' . $stall['name'] . '" name="stall[]" value="' . $stall['name'] . '" ' . ($stall['status'] == 'booked' ? 'disabled' : '') . '>
                     <label class="stall-label" for="' . $stall['name'] . '" data-stall-name="' . $stall['name'] . '">' . $stall['name'] . '</label>
