@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 rect-box">
-          <img src="images/logo-head.png" alt="logo" class=" blend img-fluid w-100 h-100" />
+          <img src="/images/NPELOGO@300x.png" alt="logo" class=" blend img-fluid w-100 h-100" />
         </div>
 
 
@@ -107,3 +107,15 @@
     </div>
   </section>
 </footer>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NT1J9XXZ5V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-NT1J9XXZ5V');
+</script>

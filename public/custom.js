@@ -46,6 +46,15 @@ $(document).ready(function () {
     ],
   });
 
+  $('[data-control-filter]').on('input', function () {
+    const targetTableId = $(this).data('control-filter');
+    const filterValue = $(this).val().toLowerCase();
+    $(`${targetTableId} tbody tr`).each(function () {
+      const rowText = $(this).text().toLowerCase();
+      $(this).toggle(rowText.includes(filterValue));
+    });
+  });
+
   // // Default screen size
   // var defaultScreenSize = 1381; // Change this to your default screen size
   // // console.log("hi" + $(window).width());

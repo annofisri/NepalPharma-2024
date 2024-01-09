@@ -1,13 +1,13 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'nepal_pharma_expo_2024');
-// define('DB_HOST', 'sdb-52.hosting.stackcp.net');
-// define('DB_USER', 'pharma_expo_2024-353030342b2d');
-// define('DB_PASS', 'laidbn6c3m');
-// define('DB_NAME', 'pharma_expo_2024-353030342b2d');
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
+// define('DB_NAME', 'nepal_pharma_expo_2024');
+define('DB_HOST', 'sdb-52.hosting.stackcp.net');
+define('DB_USER', 'pharma_expo_2024-353030342b2d');
+define('DB_PASS', 'laidbn6c3m');
+define('DB_NAME', 'pharma_expo_2024-353030342b2d');
 
 define('ROOT_PATH', __DIR__ . '/..');
 define('MAX_UPLOAD_IMAGE_SIZE', 1024 * 1024 * 20);
@@ -51,18 +51,18 @@ define('STALL_TYPES', [
     ],
     'international_exhibitor' => [
         'name' => 'International Exhibitor',
-        'price' => '100000',
+        'price' => '200000',
         'color' => '#E5D44C',
         'size' => '6 x 3',
-        'quantity' => '9sq/meter',
+        'quantity' => '6 x 3',
     ],
 
     'vendor_registered' => [
-        'name' => 'Vendor Registered',
-        'price' => '75000',
+        'name' => 'International Exhibitor',
+        'price' => '100000',
         'color' => '#C3C4C6',
         'size' => '3 x 3',
-        'quantity' => '9sq/meter',
+        'quantity' => '3 x 3',
     ],
 
 ]);

@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="what-is-img">
-            <img src="images/what-is-img.png" alt="what is img" class="w-100 h-100 object-fit-cover" />
+            <img src="images/what-is-img.jpg" alt="what is img" class="w-100 h-100 object-fit-cover" />
           </div>
 
         </div>

@@ -46,27 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="title">Banking Partner</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="250" height="20" viewBox="0 0 295 20" fill="none">
-                        <path d="M0 0H295L83.2272 14.0476L5.37585 20L0 0Z" fill="url(#paint0_linear_865_3420)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_865_3420" x1="295" y1="10" x2="-7.27193e-07" y2="9.99998" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#5C2E91" />
-                                <stop offset="1" stop-color="#93268F" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/sbi.png" alt="" />
-                        </div>
-                        <div class="sponsor-name">
-                            <div>State Bank of India</div>
-                            <div>(SBI)</div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="assciate-members">
@@ -80,15 +60,27 @@
                     </linearGradient>
                 </defs>
             </svg>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-2">
                     <div class="sponsors">
                         <div class="sponsor-img pt-3">
-                            <img src="images/phan-logo.png.png" alt="" />
+                            <img src="/images/NMA@300x.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Pharmacy Association of</div>
-                            <div>Nepal (PHAN)</div>
+                            <div>Nepal Medical</div>
+                            <div>Association</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="sponsors">
+                        <div class="sponsor-img pt-3">
+                            <img src="images/fncci-logo.png.png" alt="" />
+                        </div>
+                        <div class="sponsor-name">
+                            <div>Federation of Nepalese</div>
+                            <div>Chambers of Commerse &</div>
+                            <div>Inductry (FNCCI)</div>
                         </div>
                     </div>
                 </div>
@@ -106,23 +98,55 @@
                 <div class="col-md-2">
                     <div class="sponsors">
                         <div class="sponsor-img pt-3">
-                            <img src="images/fncci-logo.png.png" alt="" />
+                            <img src="/images/AMPAN@300x.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Federation of Nepalese</div>
-                            <div>Chambers of Commerse &</div>
-                            <div>Inductry (FCNNI)</div>
+                            <div>Ayurvedic Medicine Producers</div>
+                            <div>Association of Nepal</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="sponsors">
                         <div class="sponsor-img pt-3">
-                            <img src="images/ncda-logo.png.png" alt="" />
+                            <img src="/images/NPA@300x.png" alt="" />
+                        </div>
+                        <div class="sponsor-name">
+                            <div>Nepal Pharmaceutical</div>
+                            <div>Association</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="sponsors">
+                        <div class="sponsor-img pt-3">
+                            <img src="/images/ncda-logo.png.png" alt="" />
                         </div>
                         <div class="sponsor-name">
                             <div>Nepal Chemist & Druggist</div>
-                            <div>Asociation (NCDA)</div>
+                            <div>Association (NCDA)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="sponsors">
+                        <div class="sponsor-img pt-3">
+                            <img src="/images/CHEMSAN@300x.png" alt="" />
+                        </div>
+                        <div class="sponsor-name">
+                            <div>Nepal Chemist & Druggist</div>
+                            <div>Association (NCDA)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="sponsors">
+                        <div class="sponsor-img pt-3">
+                            <img src="images/phan-logo.png.png" alt="" />
+                        </div>
+                        <div class="sponsor-name">
+                            <div>Pharmacy Association of</div>
+                            <div>Nepal (PHAN)</div>
                         </div>
                     </div>
                 </div>
@@ -161,7 +185,7 @@
 
         <div class="platinum-sponsor">
             <div class="sponsor-header">Platinum Sponsor</div>
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md">
                     <div class="sponsors">
                         <div class="sponsor-img  plat-sponsor-img">
@@ -176,7 +200,7 @@
         </div>
         <div class="diamond-sponsor">
             <div class="sponsor-header">Diamond Sponsor</div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-3">
                     <div class="sponsors">
                         <div class="sponsor-img  diamond-sponsor-img">
@@ -201,7 +225,7 @@
         </div>
         <div class="gold-sponsor">
             <div class="sponsor-header">Gold Sponsor</div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-2">
                     <div class="sponsors">
                         <div class="sponsor-img  gold-sponsor-img">
@@ -212,52 +236,55 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-2">
+                <div class="col-md-2">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/cni-logo.png" alt="" />
+                        <div class="sponsor-img  gold-sponsor-img">
+                            <img src="images/gold-sponsor2.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Confederation of Nepalese</div>
-                            <div>Industries (CNI)</div>
+                            <div>Intence Engineering Pvt. Ltd.</div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="digital-payment-partner">
+            <div class="sponsor-header">Digital Payment Partner</div>
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-2">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/fncci-logo.png.png" alt="" />
+                        <div class="sponsor-img" style="height: auto;">
+                            <img src="images/digital-payment-partner1.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Federation of Nepalese</div>
-                            <div>Chambers of Commerse &</div>
-                            <div>Inductry (FCNNI)</div>
+                            <div>Khalti</div>
                         </div>
                     </div>
                 </div>
+                
+            </div>
+        </div>
+        <div class="event-management">
+            <div class="sponsor-header">Event Management</div>
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-2">
                     <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/ncda-logo.png.png" alt="" />
+                        <div class="sponsor-img" style="height: auto;">
+                            <img src="images/event-management1.png" alt="" />
                         </div>
                         <div class="sponsor-name">
-                            <div>Nepal Chemist & Druggist</div>
-                            <div>Asociation (NCDA)</div>
+                            <div>MICE</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="sponsors">
-                        <div class="sponsor-img pt-3">
-                            <img src="images/pdan-logo.png.png" alt="" />
-                        </div>
-                        <div class="sponsor-name">
-                            <div>Pharmaceutical Dealers</div>
-                            <div>Association of Nepal (PDAN)</div>
-                        </div>
-                    </div>
-                </div> -->
+                
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    .sponsor-section .sponsor-body .sponsors .sponsor-img {
+    height: auto;
+    }
+</style>

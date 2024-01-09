@@ -207,7 +207,7 @@ foreach ($stalls as $stall) {
                 <button type="button" class=" w-100 h-100" data-bs-toggle="modal" data-bs-target="#vendorStallModal" style="border:none;background:none; padding:0px; margin:0px;">
                   <div class="adjust vendor w-100 h-100">
                     <p class="title">
-                      Vendor Registered
+                      International Exhibitor
                     </p>
                     <p class="desc">
                       3 x 3

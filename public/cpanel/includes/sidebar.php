@@ -9,7 +9,7 @@ $current_page = str_replace(['add-', 'edit-', '-details', '-stall'], '', $curren
 <div id="mySidenav" class="sidenav">
     <div class="logo-image">
         <div class="logo h-100 w-100">
-            <a href="/" target="_blank"><img src="./assets/images/logo-head.png" alt="" style="object-fit: cover;" class="blend"></a>
+            <a href="/" target="_blank"><img src="/images/NPELOGO@300x.png" alt="" style="object-fit: cover;" class="blend"></a>
         </div>
     </div>
 

@@ -56,14 +56,14 @@
               <div>EXHIBITORS LIST</div>
 
               <div class="position-relative">
-                <input type="text" name="search" class="icon" placeholder="" />
+                <input type="text" name="search" class="icon" placeholder="" data-control-filter="#exhibitor-list" />
                 <svg class="position-absolute top-50 end-0 translate-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none" style="z-index: 100;">
                   <path d="M19.6 19.0363L13.3 13.4113C12.8 13.7684 12.225 14.0512 11.575 14.2595C10.925 14.4678 10.2333 14.572 9.5 14.572C7.68333 14.572 6.146 14.0101 4.888 12.8863C3.63 11.7625 3.00067 10.3898 3 8.76841C3 7.14639 3.62933 5.77377 4.888 4.65056C6.14667 3.52734 7.684 2.96544 9.5 2.96484C11.3167 2.96484 12.854 3.52675 14.112 4.65056C15.37 5.77437 15.9993 7.14699 16 8.76841C16 9.42318 15.8833 10.0407 15.65 10.6211C15.4167 11.2015 15.1 11.7148 14.7 12.1613L21 17.7863L19.6 19.0363ZM9.5 12.7863C10.75 12.7863 11.8127 12.3955 12.688 11.614C13.5633 10.8324 14.0007 9.88389 14 8.76841C14 7.65234 13.5623 6.70353 12.687 5.92199C11.8117 5.14044 10.7493 4.74996 9.5 4.75056C8.25 4.75056 7.18733 5.14133 6.312 5.92288C5.43667 6.70443 4.99933 7.65294 5 8.76841C5 9.88449 5.43767 10.8333 6.313 11.6148C7.18833 12.3964 8.25067 12.7869 9.5 12.7863Z" fill="#2E2E2E" />
                 </svg>
               </div>
             </div>
             <div class="table-container">
-              <table class="table table-borderless">
+              <table class="table table-borderless" id="exhibitor-list">
                 <thead class="table-head">
                   <tr>
                     <th scope="col-md-5">COMPANY NAME</th>
